@@ -147,6 +147,7 @@ footer .redes{
 .gridServicios{
     display: grid;
     align-items: center;
+    justify-content: center;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 
@@ -177,6 +178,9 @@ footer .redes{
 
 .lista1{
     grid-area: lista1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .lista2{
     grid-area: lista2;
@@ -209,7 +213,7 @@ footer .redes{
     border-radius: 50%;
 }
 
-.boton1 a{
+.boton1 a input{
     font-family: 'Poppins', sans-serif;
     font-size: 19px;
     font-weight:300;
@@ -217,7 +221,9 @@ footer .redes{
     color:#ffffff;
     background-color: #323741;
     border-radius: 9px;
-    padding: 16px;
+    padding: 9px;
+    margin: 3px;
+    border-color: #323741;
 }
 
 /*
