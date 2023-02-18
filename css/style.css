@@ -148,12 +148,12 @@ footer .redes{
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, auto);
     grid-template-areas: 
-    ". img1 titulo1 . lista1 lista1 lista1 ."
-    ". lista2 lista2 lista2 . titulo2 img2 ."
-    ". img3 titulo3 . lista3 lista3 lista3 .";
+    ". img1 . titulo1 . . lista1 lista1 lista1 ."
+    ". lista2 lista2 lista2 . . titulo2 . img2 ."
+    ". img3 . titulo3 . . lista3 lista3 lista3 .";
 }
 
 .img1{
@@ -180,13 +180,19 @@ footer .redes{
     grid-area: lista1;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: center;
 }
 .lista2{
     grid-area: lista2;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 .lista3{
     grid-area: lista3;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
 .gridServicios div h4{
@@ -225,6 +231,11 @@ footer .redes{
     margin: 3px;
     border-color: #323741;
 }
+
+.boton1{
+    align-self: center;
+}
+
 
 /*
 .backgroundImagenEnfoque{
