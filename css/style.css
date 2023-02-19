@@ -19,6 +19,10 @@ li{
 a{
     text-decoration: none;
 }
+/*fondo de todos los mains*/
+main{
+    background-color: #CCCCDE;
+}
 
 /*HEADER Y BARRA DE NAVEGACION*/
 header{
@@ -47,7 +51,7 @@ header{
 /*PIE DE PAGINA*/
 footer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: #323741;
     height: 136px;
@@ -245,7 +249,7 @@ footer .redes{
     justify-items: center;
     grid-template-areas: 
     "im1 im1 im1 im1"
-    "ti1 ti1 ti1 ti1"
+    ". ti1 ti1 ."
     "ca1 ca2 ca3 ca4"
     "ca5 ca6 ca7 ca8"
     "diag diag diag diag"
