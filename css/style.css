@@ -144,6 +144,11 @@ footer .redes{
     font-size: 19px;
     color:#323741;
     text-align: center;
+    padding: 3%;
+}
+
+.card1 img{
+    border-radius: 50%;
 }
 
 /* PAGINA SERVICIOS IMAGEN CON TITULO Y LISTA CON CHECK*/
@@ -153,6 +158,7 @@ footer .redes{
     justify-content: center;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(3, auto);
+    padding: 30px;
     grid-template-areas: 
     ". img1 . titulo1 . . lista1 lista1 lista1 ."
     ". lista2 lista2 lista2 . . titulo2 . img2 ."
@@ -202,8 +208,6 @@ footer .redes{
     font-family: 'Poppins', sans-serif;
     font-size: 23px;
     color:#d80000;
-    text-shadow: 1px 1px 1px #323741;
-
 }
 
 .listaConTilde li {
@@ -350,8 +354,7 @@ footer .redes{
 }
 
 
-/*
-.backgroundImagenEquipo{
+.imgEquipo{
     background-image: url("../assets/img/pasion-led-us-here.jpg");
     width: 100%;
     height: 600px;
@@ -360,23 +363,26 @@ footer .redes{
     background-position: center;
 }
 
-.backgroundImagenEquipo h2{
+.imgEquipo h2{
     font-family: 'Poppins', sans-serif;
     font-size: 45px;
-    text-align: center;
     color: #ffffff;
     text-shadow: 3px 3px 4px #323741;
+    padding-left: 5%;
+    padding-top: 5%;
 }
 
-.backgroundImagenEquipo h3{
+.imgEquipo h3{
     font-family: 'Poppins', sans-serif;
     font-size: 21px;
-    text-align: center;
     color: #ffffff;
     text-shadow: 3px 3px 4px #323741;
-    
+    padding-left: 5%;    
 }
+/*PARA LAS CARDS DE EQUIPO UTILIZO LA MISMA CLASE DE INDEX*/
 
+
+/*
 form{
     background-color: #d9d9d9;
     font-family: 'Poppins', sans-serif;
