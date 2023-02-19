@@ -240,16 +240,15 @@ footer .redes{
 /*PAGINA ENFOQUE GRID COMPLETO DESDE EL MAIN*/
 .gridEnfoque{
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: 500px 200px repeat(3, 1fr);
-    align-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 500px 200px repeat(3, 0.5fr);
     justify-items: center;
     grid-template-areas: 
-    "im1 im1 im1 im1 im1 im1 im1 im1 im1"
-    ". . ti1 ti1 ti1 ti1 ti1 . ."
-    ". ca1 . ca2 . ca3 . ca4 ."
-    ". ca5 . ca6 . ca7 . ca8 ."
-    ". diag diag diag diag diag diag diag ."
+    "im1 im1 im1 im1"
+    "ti1 ti1 ti1 ti1"
+    "ca1 ca2 ca3 ca4"
+    "ca5 ca6 ca7 ca8"
+    "diag diag diag diag"
     ;
 }
 
@@ -258,33 +257,43 @@ footer .redes{
 }
 .titulosEnfoque{
     grid-area: ti1;
+    align-self: center;
 }
 .nCard1{
     grid-area: ca1;
+    padding: 0px 20px;
 }
 .nCard2{
     grid-area: ca2;
+    padding: 0px 20px;
 }
 .nCard3{
     grid-area: ca3;
+    padding: 0px 20px;
 }
 .nCard4{
     grid-area: ca4;
+    padding: 0px 20px;
 }
 .nCard5{
     grid-area: ca5;
+    padding: 0px 20px;
 }
 .nCard6{
     grid-area: ca6;
+    padding: 0px 20px;
 }
 .nCard7{
     grid-area: ca7;
+    padding: 0px 20px;
 }
 .nCard8{
     grid-area: ca8;
+    padding: 0px 20px;
 }
 .diagrama{
     grid-area: diag;
+    padding: 30px;
 } 
 
 .imgEnfoque{
@@ -299,7 +308,8 @@ footer .redes{
     font-size: 45px;
     text-align: center;
     color: #ffffff;
-    text-shadow: 3px 3px 4px #323741
+    text-shadow: 3px 3px 4px #323741;
+    padding-top: 27%;
 }
 
 .titulosEnfoque h3{
@@ -317,15 +327,7 @@ footer .redes{
     text-align: center;
 }
 
-.card2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2%;
-    width:30%;
-}
-
-.card2 h4{
+.gridEnfoque div h4{
     font-family: 'Poppins', sans-serif;
     font-size: 23px;
     color:#d80000;
@@ -336,18 +338,13 @@ footer .redes{
     text-align: center;
 }
 
-.card2 p{
+.gridEnfoque div p{
     font-family: 'Poppins', sans-serif;
     font-size: 19px;
     color:#323741;
     text-align: center;
 }
 
-/* .diagrama img{
-    display: block;
-    margin: auto;
-    padding: 50px;
-} */
 
 /*
 .backgroundImagenEquipo{
