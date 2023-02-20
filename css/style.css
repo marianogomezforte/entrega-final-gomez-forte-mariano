@@ -41,7 +41,7 @@ header{
     flex-wrap: wrap;
 }
 
-.barraNav li a{  
+.barraNav li a{
     font-family: 'Poppins', sans-serif;
     font-size: 21px;
     color: white;
@@ -110,7 +110,7 @@ footer .redes{
     text-align: center;
     color: #d80000;
     text-shadow: 3px 3px 4px #323741;
-    
+
 }
 
 /*CARDS SECCION 2 INDEX*/
@@ -159,7 +159,7 @@ footer .redes{
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(3, auto);
     padding: 30px;
-    grid-template-areas: 
+    grid-template-areas:
     ". img1 . titulo1 . . lista1 lista1 lista1 ."
     ". lista2 lista2 lista2 . . titulo2 . img2 ."
     ". img3 . titulo3 . . lista3 lista3 lista3 .";
@@ -251,7 +251,7 @@ footer .redes{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 500px 200px repeat(3, 0.5fr);
     justify-items: center;
-    grid-template-areas: 
+    grid-template-areas:
     "im1 im1 im1 im1"
     ". ti1 ti1 ."
     "ca1 ca2 ca3 ca4"
@@ -302,7 +302,7 @@ footer .redes{
 .diagrama{
     grid-area: diag;
     padding: 30px;
-} 
+}
 
 .imgEnfoque{
     background-image: url("../assets/img/enfoque-nuevo-redim.jpg");
@@ -354,6 +354,7 @@ footer .redes{
 }
 
 
+/*PAGINA EQUIPO*/
 .imgEquipo{
     background-image: url("../assets/img/pasion-led-us-here.jpg");
     width: 100%;
@@ -377,15 +378,30 @@ footer .redes{
     font-size: 21px;
     color: #ffffff;
     text-shadow: 3px 3px 4px #323741;
-    padding-left: 5%;    
+    padding-left: 5%;
 }
-/*PARA LAS CARDS DE EQUIPO UTILIZO LA MISMA CLASE DE INDEX*/
+/*PARA LAS CARDS DE EQUIPO UTILIZO LA MISMA CLASE DE INDEX (card1)*/
 
+/*PAGINA CONTACTO (BOOTSTRAP)*/
 
-/*
-form{
-    background-color: #d9d9d9;
+.pagContacto{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    text-align: center;
-} */
+}
+iframe{
+    width: 100%;
+}
+
+.barraNavB{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 33px;
+    flex-wrap: wrap;
+}
+
+.barraNavB li a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    color: white;
+    font-weight:300;
+}
