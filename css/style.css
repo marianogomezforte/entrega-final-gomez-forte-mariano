@@ -54,7 +54,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     background-color: #323741;
-    height: 136px;
+    height: auto;
 
     font-family: 'Poppins', sans-serif;
     font-size: 17px;
@@ -62,11 +62,11 @@ footer{
     font-weight:300;
 }
 
-footer .contacto{
+.contacto{
     padding-left: 30px;
 }
 
-footer .redes{
+.redes{
     padding-right: 30px;
     display: flex;
     flex-direction: column;
@@ -402,6 +402,14 @@ iframe{
 .barraNavB li a{
     font-family: 'Poppins', sans-serif;
     font-size: 21px;
+    color: white;
+    font-weight:300;
+}
+
+.botonEnviar{
+    background-color: #323741;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
     color: white;
     font-weight:300;
 }
