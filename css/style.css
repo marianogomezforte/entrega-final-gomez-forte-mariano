@@ -415,6 +415,22 @@ iframe{
 }
 
 
+/*BREAKPOINT 900px*/
+@media (max-width:900px){
+    .descConIcono{        
+        justify-content: center;
+        flex-direction: column;
+        padding: 3%;
+    }
+
+    .card1{
+        width: 100%;
+    }
+    .imgEquipo{
+        background-position:top;
+    }
+}
+
 /*BREAKPOINT 808px*/
 @media (max-width:808px){
     .barraNav{
@@ -445,7 +461,7 @@ iframe{
     }
 }
 
-/*MOBILE*/
+/*BREAKPOINT 700px*/
 @media (max-width:700px){
     .imagenConTexto{
         padding-top: 35%;
@@ -483,5 +499,31 @@ iframe{
     }
     .redes{
         padding: 0px;
+    }
+    .imgEquipo h2{
+        font-size: 29px;
+        /* padding-left: 5%; */
+        /* padding-top: 2%; */
+    }
+    
+    .imgEquipo h3{
+        font-size: 17px;
+        /* padding-left: 5%; */
+    }
+}
+
+/*BREAKPOINT 525px*/
+@media (max-width:525px){
+    .imgEquipo h2{
+        font-size: 20px;
+        padding-left: 0%;
+        padding-top: 0%;
+        text-align: center;
+    }
+    
+    .imgEquipo h3{
+        font-size: 14px;
+        padding-left: 0%;
+        text-align: center;
     }
 }
