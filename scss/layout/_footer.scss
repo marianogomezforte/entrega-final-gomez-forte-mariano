@@ -1,0 +1,29 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:$background-color-barras;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    color: white;
+    font-weight:300;
+}
+
+.contacto{
+    padding-left: 30px;
+}
+
+.redes{
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.wspYnum{
+    display: flex;
+    align-items:flex-start;
+    gap: 10px;
+}

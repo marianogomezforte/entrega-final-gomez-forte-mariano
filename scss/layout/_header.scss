@@ -1,0 +1,31 @@
+header{
+    display: flex;
+    background-color: $background-color-barras;
+    width: 100%;
+    justify-content:left;
+    align-items: center;
+    div{
+        margin-left: 4%;
+    }
+}
+
+.barraNav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 55px;
+    margin-left: 30%;
+    li{
+        list-style: none;
+        a{
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-size: 23px;
+            color: white;
+            font-weight:300;
+            &:hover{
+                color:#CCCCDE;
+            }
+        }
+    }
+}
