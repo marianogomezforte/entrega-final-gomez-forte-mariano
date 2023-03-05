@@ -2,14 +2,17 @@
 @import "./utilities/variables";
 /*reseteo*/
 @import "./base/reset";
-
+@import "./base/typo";
 
 header{
     display: flex;
-    background-color: #323741;
+    background-color: $background-color-barras;
     width: 100%;
     justify-content:left;
     align-items: center;
+    div{
+        margin-left: 4%;
+    }
 }
 
 .barraNav{
