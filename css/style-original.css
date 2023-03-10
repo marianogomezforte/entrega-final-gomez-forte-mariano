@@ -261,6 +261,10 @@ footer{
 
 .imgEnfoque{
     grid-area: im1;
+    background-image: url("../assets/img/enfoque-nuevo-redim.jpg");
+    width: 100%;
+    height: 500px;
+    background-size:cover;
 }
 .titulosEnfoque{
     grid-area: ti1;
@@ -301,13 +305,6 @@ footer{
 .diagrama{
     grid-area: diag;
     padding: 30px;
-}
-
-.imgEnfoque{
-    background-image: url("../assets/img/enfoque-nuevo-redim.jpg");
-    width: 100%;
-    height: 500px;
-    background-size:cover;
 }
 
 .imgEnfoque h2{

@@ -1,4 +1,3 @@
-/*reseteo*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@50;100;200;300;500&display=swap");
 * {
   margin: 0;
@@ -12,7 +11,7 @@ header {
   justify-content: left;
   align-items: center; }
   header div {
-    margin-left: 4%; }
+    margin-left: 6%; }
 
 .barraNav {
   display: flex;
@@ -111,3 +110,194 @@ main {
     padding: 3%; }
   .card1 img {
     border-radius: 50%; }
+
+/* PAGINA SERVICIOS IMAGEN CON TITULO Y LISTA CON CHECK*/
+.gridServicios {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(3, auto);
+  padding: 30px;
+  grid-template-areas: ". img1 . titulo1 . . lista1 lista1 lista1 ." ". lista2 lista2 lista2 . . titulo2 . img2 ." ". img3 . titulo3 . . lista3 lista3 lista3 ."; }
+
+.img1 {
+  grid-area: img1; }
+
+.img2 {
+  grid-area: img2; }
+
+.img3 {
+  grid-area: img3; }
+
+.titulo1 {
+  grid-area: titulo1; }
+
+.titulo2 {
+  grid-area: titulo2; }
+
+.titulo3 {
+  grid-area: titulo3; }
+
+.lista1 {
+  grid-area: lista1;
+  display: flex;
+  flex-direction: column;
+  align-content: center; }
+
+.lista2 {
+  grid-area: lista2;
+  display: flex;
+  flex-direction: column;
+  align-content: center; }
+
+.lista3 {
+  grid-area: lista3;
+  display: flex;
+  flex-direction: column;
+  align-content: center; }
+
+.gridServicios div h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 23px;
+  color: #d80000; }
+
+.listaConTilde {
+  background-color: #d9d9d9;
+  border-radius: 19px;
+  padding: 30px; }
+  .listaConTilde li {
+    list-style: url("../assets/img/icons/icon_check50px.png");
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    color: #323741;
+    margin-left: 9%; }
+
+.gridServicios img {
+  border-radius: 50%; }
+
+.boton1 {
+  align-self: center; }
+  .boton1 a input {
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #323741;
+    border-radius: 9px;
+    padding: 9px;
+    margin: 3px;
+    border-color: #323741; }
+
+.gridEnfoque {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 500px 200px repeat(3, 0.5fr);
+  justify-items: center;
+  grid-template-areas: "im1 im1 im1 im1" ". ti1 ti1 ." "ca1 ca2 ca3 ca4" "ca5 ca6 ca7 ca8" "diag diag diag diag"; }
+  .gridEnfoque div h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    color: #d80000;
+    background-color: #d9d9d9;
+    border-radius: 19px;
+    padding: 3%;
+    margin: 20px 0px;
+    text-align: center; }
+  .gridEnfoque div p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    color: #323741;
+    text-align: center; }
+
+.imgEnfoque {
+  grid-area: im1;
+  background-image: url("../assets/img/enfoque-nuevo-redim.jpg");
+  width: 100%;
+  height: 500px;
+  background-size: cover; }
+  .imgEnfoque h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 3px 3px 4px #323741;
+    padding-top: 27%; }
+
+.titulosEnfoque {
+  grid-area: ti1;
+  align-self: center; }
+  .titulosEnfoque h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    color: #d80000;
+    text-shadow: 3px 3px 4px #323741; }
+  .titulosEnfoque p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    color: #323741;
+    text-align: center; }
+
+.nCard1 {
+  grid-area: ca1;
+  padding: 0px 20px; }
+
+.nCard2 {
+  grid-area: ca2;
+  padding: 0px 20px; }
+
+.nCard3 {
+  grid-area: ca3;
+  padding: 0px 20px; }
+
+.nCard4 {
+  grid-area: ca4;
+  padding: 0px 20px; }
+
+.nCard5 {
+  grid-area: ca5;
+  padding: 0px 20px; }
+
+.nCard6 {
+  grid-area: ca6;
+  padding: 0px 20px; }
+
+.nCard7 {
+  grid-area: ca7;
+  padding: 0px 20px; }
+
+.nCard8 {
+  grid-area: ca8;
+  padding: 0px 20px; }
+
+.diagrama {
+  grid-area: diag;
+  padding: 30px; }
+
+/*PAGINA EQUIPO*/
+.imgEquipo {
+  background-image: url("../assets/img/pasion-led-us-here.jpg");
+  width: 100%;
+  height: 600px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.imgEquipo h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 45px;
+  color: #ffffff;
+  text-shadow: 3px 3px 4px #323741;
+  padding-left: 5%;
+  padding-top: 5%; }
+
+.imgEquipo h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 21px;
+  color: #ffffff;
+  text-shadow: 3px 3px 4px #323741;
+  padding-left: 5%; }
+
+/*PARA LAS CARDS DE EQUIPO UTILIZO LA MISMA CLASE DE INDEX (card1)*/

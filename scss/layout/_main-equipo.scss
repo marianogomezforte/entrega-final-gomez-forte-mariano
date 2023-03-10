@@ -1,0 +1,27 @@
+/*PAGINA EQUIPO*/
+.imgEquipo{
+    background-image: url("../assets/img/pasion-led-us-here.jpg");
+    width: 100%;
+    height: 600px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.imgEquipo h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    color: #ffffff;
+    text-shadow: 3px 3px 4px #323741;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.imgEquipo h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    color: #ffffff;
+    text-shadow: 3px 3px 4px #323741;
+    padding-left: 5%;
+}
+/*PARA LAS CARDS DE EQUIPO UTILIZO LA MISMA CLASE DE INDEX (card1)*/

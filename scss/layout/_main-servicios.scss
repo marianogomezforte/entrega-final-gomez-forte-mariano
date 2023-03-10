@@ -1,0 +1,94 @@
+/* PAGINA SERVICIOS IMAGEN CON TITULO Y LISTA CON CHECK*/
+.gridServicios{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, auto);
+    padding: 30px;
+    grid-template-areas:
+    ". img1 . titulo1 . . lista1 lista1 lista1 ."
+    ". lista2 lista2 lista2 . . titulo2 . img2 ."
+    ". img3 . titulo3 . . lista3 lista3 lista3 .";
+}
+
+.img1{
+    grid-area: img1;
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+
+.titulo1{
+    grid-area: titulo1;
+}
+.titulo2{
+    grid-area: titulo2;
+}
+.titulo3{
+    grid-area: titulo3;
+}
+
+.lista1{
+    grid-area: lista1;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.lista2{
+    grid-area: lista2;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.lista3{
+    grid-area: lista3;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.gridServicios div h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    color:#d80000;
+}
+
+.listaConTilde{
+    background-color: #d9d9d9;
+    border-radius: 19px;
+    padding: 30px;
+
+    li {
+        list-style: url("../assets/img/icons/icon_check50px.png");
+        font-family: 'Poppins', sans-serif;
+        font-size: 19px;
+        color:#323741;
+        margin-left: 9%;
+    }
+}
+
+.gridServicios img{
+    border-radius: 50%;
+}
+
+.boton1{
+    align-self: center;
+    a{
+        input{
+        font-family: 'Poppins', sans-serif;
+        font-size: 19px;
+        font-weight:300;
+        text-decoration: none;
+        color:#ffffff;
+        background-color: #323741;
+        border-radius: 9px;
+        padding: 9px;
+        margin: 3px;
+        border-color: #323741;
+        }
+    }
+}
