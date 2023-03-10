@@ -301,3 +301,30 @@ main {
   padding-left: 5%; }
 
 /*PARA LAS CARDS DE EQUIPO UTILIZO LA MISMA CLASE DE INDEX (card1)*/
+/*PAGINA CONTACTO (BOOTSTRAP)*/
+.pagContacto {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px; }
+
+iframe {
+  width: 100%; }
+
+.barraNavB {
+  display: flex;
+  justify-content: space-around;
+  gap: 33px; }
+  .barraNavB li {
+    list-style: none; }
+    .barraNavB li a {
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif;
+      font-size: 21px;
+      color: white;
+      font-weight: 300; }
+
+.botonEnviar {
+  background-color: #323741;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: 300; }
