@@ -59,15 +59,17 @@ footer {
 main {
   background-color: #CCCCDE; }
 
+.imgFondo img {
+  width: 100%;
+  height: 600px;
+  position: absolute; }
+
 .imagenConTexto {
-  background-image: url("../assets/img/reunion-negocio.jpg");
   display: flex;
   flex-direction: column;
   justify-content: start;
-  padding-top: 5%;
-  width: 100%;
-  height: 500px;
-  background-size: cover; }
+  position: relative;
+  animation: imagenConTexto 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
   .imagenConTexto h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
@@ -81,8 +83,17 @@ main {
     color: #d80000;
     text-shadow: 3px 3px 4px #323741; }
 
+@keyframes imagenConTexto {
+  0% {
+    transform: translateY(500px);
+    opacity: 0; }
+  100% {
+    transform: translateY(300px);
+    opacity: 1; } }
+
 /*CARDS SECCION 2 INDEX*/
 .descConIcono {
+  margin-top: 5%;
   display: flex;
   justify-content: space-evenly;
   padding: 3%; }
@@ -175,20 +186,6 @@ main {
 
 .gridServicios img {
   border-radius: 50%; }
-
-.boton1 {
-  align-self: center; }
-  .boton1 a input {
-    font-family: 'Poppins', sans-serif;
-    font-size: 19px;
-    font-weight: 300;
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #323741;
-    border-radius: 9px;
-    padding: 9px;
-    margin: 3px;
-    border-color: #323741; }
 
 .gridEnfoque {
   display: grid;
@@ -311,16 +308,20 @@ iframe {
 
 .barraNavB {
   display: flex;
-  justify-content: space-around;
-  gap: 33px; }
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 55px;
+  margin-left: 30%; }
   .barraNavB li {
     list-style: none; }
     .barraNavB li a {
       text-decoration: none;
       font-family: 'Poppins', sans-serif;
-      font-size: 21px;
+      font-size: 23px;
       color: white;
       font-weight: 300; }
+      .barraNavB li a:hover {
+        color: #CCCCDE; }
 
 .botonEnviar {
   background-color: #323741;
@@ -328,3 +329,17 @@ iframe {
   font-size: 16px;
   color: white;
   font-weight: 300; }
+
+.boton1 {
+  align-self: center; }
+  .boton1 a input {
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #323741;
+    border-radius: 9px;
+    padding: 9px;
+    margin: 3px;
+    border-color: #323741; }
