@@ -28,4 +28,42 @@
         padding: 5px;
     }
     
+    // correccion grid de enfoque
+    .gridEnfoque{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 500px 200px repeat(5, 0.5fr);
+        grid-template-areas: 
+        "im1 im1"
+        "ti1 ti1"
+        "ca1 ca2"
+        "ca3 ca4"
+        "ca5 ca6"
+        "ca7 ca8"
+        "diag diag";
+    }
+
+    .nCard1{
+        padding: 0px 50px;
+    }
+    .nCard2{
+        padding: 0px 50px;
+    }
+    .nCard3{
+        padding: 0px 50px;
+    }
+    .nCard4{
+        padding: 0px 50px;
+    }
+    .nCard5{
+        padding: 0px 50px;
+    }
+    .nCard6{
+        padding: 0px 50px;
+    }
+    .nCard7{
+        padding: 0px 50px;
+    }
+    .nCard8{
+        padding: 0px 50px;
+    }
 }

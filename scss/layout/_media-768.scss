@@ -1,0 +1,78 @@
+/*BREAKPOINT 768px*/
+@media (max-width:768px){
+    
+    // correccion en barra de navegacion
+    header{
+        div{
+            margin-left: 0%;
+        }
+    }
+    .barraNav{
+        gap:15px;
+        margin-left: 10%;
+    }
+
+    // se acomoda texto de la imagen
+    .imagenConTexto{
+        h2{
+            font-size: 37px;
+        }
+        h3{
+            font-size: 27px
+        }
+    }
+
+    // cards en columna
+    .descConIcono{
+        margin-top: 500px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    // correccion animacion
+    .imgEquipo{
+        h2{
+            padding-left: 3%;
+            padding-top: 12%;
+        }
+        h3{
+            padding-left: 3%;
+        }
+    }
+    @keyframes imagenConTexto2 {
+        0% {
+            transform: translateY(-50px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+
+    // correccion grid de servicios
+    .gridServicios{
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: 
+        ". img1 img1 . titulo1 titulo1 ."
+        ". lista1 lista1 lista1 lista1 lista1 ."
+        ". img2 img2 . titulo2 titulo2 ."
+        ". lista2 lista2 lista2 lista2 lista2 ."
+        ". img3 img3 . titulo3 titulo3 ."
+        ". lista3 lista3 lista3 lista3 lista3 .";
+    }
+
+    
+
+    .diagrama{
+        img{
+            width: 730px;
+            height: 730px;
+        }      
+    }
+
+    .titulosEnfoque{
+        margin: 35px;
+    }
+}
