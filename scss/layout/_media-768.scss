@@ -39,16 +39,6 @@
             padding-left: 3%;
         }
     }
-    @keyframes imagenConTexto2 {
-        0% {
-            transform: translateY(-50px);
-            opacity: 0;
-        }
-        100% {
-            transform: translateY(0px);
-            opacity: 1;
-        }
-    }
 
     // correccion grid de servicios
     .gridServicios{
@@ -63,8 +53,6 @@
         ". lista3 lista3 lista3 lista3 lista3 .";
     }
 
-    
-
     .diagrama{
         img{
             width: 730px;
@@ -74,5 +62,10 @@
 
     .titulosEnfoque{
         margin: 35px;
+    }
+    .imgEnfoque{
+        h2{
+            padding-left: 100px;
+        }
     }
 }

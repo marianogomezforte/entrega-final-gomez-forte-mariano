@@ -33,11 +33,11 @@
 
 @keyframes imagenConTexto2 {
     0% {
-        transform: translateX(600px);
+        transform: translateY(-50px);
         opacity: 0;
     }
     100% {
-        transform: translateX(36px);
+        transform: translateY(0px);
         opacity: 1;
     }
 }

@@ -303,10 +303,10 @@ main {
 
 @keyframes imagenConTexto2 {
   0% {
-    transform: translateX(600px);
+    transform: translateY(-50px);
     opacity: 0; }
   100% {
-    transform: translateX(36px);
+    transform: translateY(0px);
     opacity: 1; } }
 
 /*PARA LAS CARDS DE EQUIPO UTILIZO LA MISMA CLASE DE INDEX (card1)*/
@@ -412,13 +412,6 @@ iframe {
     padding-top: 12%; }
   .imgEquipo h3 {
     padding-left: 3%; }
-  @keyframes imagenConTexto2 {
-    0% {
-      transform: translateY(-50px);
-      opacity: 0; }
-    100% {
-      transform: translateY(0px);
-      opacity: 1; } }
   .gridServicios {
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(6, auto);
@@ -427,4 +420,74 @@ iframe {
     width: 730px;
     height: 730px; }
   .titulosEnfoque {
-    margin: 35px; } }
+    margin: 35px; }
+  .imgEnfoque h2 {
+    padding-left: 100px; } }
+
+/*BREAKPOINT 425px*/
+@media (max-width: 425px) {
+  header {
+    justify-content: center;
+    flex-direction: column; }
+    header div {
+      margin-left: 0%; }
+  .barraNav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .imagenConTexto h2 {
+    font-size: 27px; }
+  .imagenConTexto h3 {
+    font-size: 20px; }
+  .imgFondo img {
+    height: 350px; }
+  @keyframes imagenConTexto {
+    0% {
+      transform: translateY(300px);
+      opacity: 0; }
+    100% {
+      transform: translateY(150px);
+      opacity: 1; } }
+  .descConIcono {
+    margin-top: 250px; }
+  .imgFondo2 img {
+    height: 350px; }
+  .imgEquipo h2 {
+    font-size: 27px; }
+  .imgEquipo h3 {
+    font-size: 18px; }
+  @keyframes imagenConTexto2 {
+    0% {
+      transform: translateY(-70px);
+      opacity: 0; }
+    100% {
+      transform: translateY(-40px);
+      opacity: 1; } }
+  .gridServicios {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 350px 45px 650px 350px 45px 400px 350px 45px 400px;
+    grid-template-areas: "img1" "titulo1" "lista1" "img2" "titulo2" "lista2" "img3" "titulo3" "lista3"; }
+    .gridServicios img {
+      margin-left: 30px; }
+  .gridEnfoque {
+    display: flex;
+    flex-direction: column; }
+  .diagrama img {
+    width: 410px;
+    height: 410px; }
+  .imgEnfoque {
+    background-size: cover;
+    height: 230px; }
+    .imgEnfoque h2 {
+      padding-left: 0px;
+      padding-top: 21%; }
+  .titulosEnfoque {
+    margin: 0%; }
+    .titulosEnfoque h3 {
+      font-size: 25px; } }

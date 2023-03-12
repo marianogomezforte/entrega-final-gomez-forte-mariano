@@ -1,0 +1,130 @@
+/*BREAKPOINT 425px*/
+@media (max-width:425px){
+    //correccion barra de navegacion, todavia no se como hacer
+    //un desplegable sin bootstrap
+    header{
+        justify-content: center;
+        flex-direction: column;
+        div{
+            margin-left: 0%;
+        }
+    }
+
+    .barraNav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    // correccion alienacion de footer
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    // correccion de tamaño de fuente de animacion index
+    .imagenConTexto{
+        h2{
+            font-size: 27px;
+        }
+        h3{
+            font-size: 20px;
+        }
+    }
+
+    // correccion de tamaño imagen de fondo y animacion index
+    .imgFondo{
+        img{
+            height: 350px;
+        }
+    }
+    @keyframes imagenConTexto {
+        0% {
+            transform: translateY(300px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(150px);
+            opacity: 1;
+        }
+    }
+    .descConIcono{
+        margin-top: 250px;
+    }
+
+    // correccion imagen y animacion equipo
+    .imgFondo2{
+        img{
+            height: 350px;
+        }
+    }
+    .imgEquipo{
+        h2{
+            font-size: 27px;
+        }
+        h3{
+            font-size: 18px;
+        }
+    }
+    @keyframes imagenConTexto2 {
+        0% {
+            transform: translateY(-70px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(-40px);
+            opacity: 1;
+        }
+    }
+
+    //correccion de alineacion elementos servicio
+    .gridServicios{
+        display: grid;
+        align-items: center;
+        
+        grid-template-columns: 1fr;
+        grid-template-rows: 350px 45px 650px 350px 45px 400px 350px 45px 400px;
+        grid-template-areas: 
+        "img1"
+        "titulo1"
+        "lista1"
+        "img2"
+        "titulo2"
+        "lista2"
+        "img3"
+        "titulo3"
+        "lista3";
+
+        img{
+            margin-left: 30px;
+        }
+    }
+
+    //correccion de alineacion elementos enfoque
+    .gridEnfoque{
+        display: flex;
+        flex-direction: column;
+    }
+    .diagrama{
+        img{
+            width: 410px;
+            height: 410px;
+        }
+    }
+    .imgEnfoque{
+        background-size: cover;
+        height: 230px;
+        h2{
+            padding-left: 0px;
+            padding-top: 21%;
+        }
+    }
+    .titulosEnfoque{
+        margin: 0%;
+        h3{
+            font-size: 25px;
+        }
+    }
+
+}
