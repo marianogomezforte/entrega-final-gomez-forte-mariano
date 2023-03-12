@@ -93,7 +93,7 @@ main {
 
 /*CARDS SECCION 2 INDEX*/
 .descConIcono {
-  margin-top: 500px;
+  margin-top: 400px;
   display: flex;
   justify-content: space-evenly;
   padding: 3%; }
@@ -131,6 +131,12 @@ main {
   grid-template-rows: repeat(3, auto);
   padding: 30px;
   grid-template-areas: ". img1 . titulo1 . . lista1 lista1 lista1 ." ". lista2 lista2 lista2 . . titulo2 . img2 ." ". img3 . titulo3 . . lista3 lista3 lista3 ."; }
+  .gridServicios div h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    color: #d80000; }
+  .gridServicios img {
+    border-radius: 50%; }
 
 .img1 {
   grid-area: img1; }
@@ -142,13 +148,16 @@ main {
   grid-area: img3; }
 
 .titulo1 {
-  grid-area: titulo1; }
+  grid-area: titulo1;
+  text-align: center; }
 
 .titulo2 {
-  grid-area: titulo2; }
+  grid-area: titulo2;
+  text-align: center; }
 
 .titulo3 {
-  grid-area: titulo3; }
+  grid-area: titulo3;
+  text-align: center; }
 
 .lista1 {
   grid-area: lista1;
@@ -168,11 +177,6 @@ main {
   flex-direction: column;
   align-content: center; }
 
-.gridServicios div h4 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 23px;
-  color: #d80000; }
-
 .listaConTilde {
   background-color: #d9d9d9;
   border-radius: 19px;
@@ -184,15 +188,12 @@ main {
     color: #323741;
     margin-left: 9%; }
 
-.gridServicios img {
-  border-radius: 50%; }
-
 .gridEnfoque {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 500px 200px repeat(3, 0.5fr);
   justify-items: center;
-  grid-template-areas: "im1 im1 im1 im1" ". ti1 ti1 ." "ca1 ca2 ca3 ca4" "ca5 ca6 ca7 ca8" "diag diag diag diag"; }
+  grid-template-areas: "im1 im1 im1 im1" "ti1 ti1 ti1 ti1" "ca1 ca2 ca3 ca4" "ca5 ca6 ca7 ca8" "diag diag diag diag"; }
   .gridEnfoque div h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 23px;
@@ -281,21 +282,19 @@ main {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center; }
-
-.imgEquipo h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 45px;
-  color: #ffffff;
-  text-shadow: 3px 3px 4px #323741;
-  padding-left: 5%;
-  padding-top: 5%; }
-
-.imgEquipo h3 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 21px;
-  color: #ffffff;
-  text-shadow: 3px 3px 4px #323741;
-  padding-left: 5%; }
+  .imgEquipo h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    color: #ffffff;
+    text-shadow: 3px 3px 4px #323741;
+    padding-left: 5%;
+    padding-top: 5%; }
+  .imgEquipo h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    color: #ffffff;
+    text-shadow: 3px 3px 4px #323741;
+    padding-left: 5%; }
 
 /*PARA LAS CARDS DE EQUIPO UTILIZO LA MISMA CLASE DE INDEX (card1)*/
 /*PAGINA CONTACTO (BOOTSTRAP)*/
@@ -343,3 +342,19 @@ iframe {
     padding: 9px;
     margin: 3px;
     border-color: #323741; }
+
+/*BREAKPOINT 1024px*/
+@media (max-width: 1024px) {
+  .barraNav {
+    gap: 25px;
+    margin-left: 15%; }
+  .card1 {
+    width: 100%; }
+  .gridServicios div h4 {
+    font-size: 21px; }
+  .titulo1 {
+    padding: 5px; }
+  .titulo2 {
+    padding: 5px; }
+  .titulo3 {
+    padding: 5px; } }

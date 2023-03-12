@@ -1,0 +1,31 @@
+/*BREAKPOINT 1024px*/
+@media (max-width:1024px){
+
+    .barraNav{
+        gap: 25px;
+        margin-left: 15%;
+    }
+
+    .card1{
+        width: 100%;
+    }
+
+    .gridServicios{
+        div{
+            h4{
+                font-size: 21px;
+            }
+        }
+    }
+
+    .titulo1{
+    padding: 5px;
+    }
+    .titulo2{
+        padding: 5px;
+    }
+    .titulo3{
+        padding: 5px;
+    }
+    
+}
