@@ -67,13 +67,19 @@
             font-size: 18px;
         }
     }
+    //animacion tapa barra de navegacion para ir a contacto
+    .imgEquipo{
+        h2{
+            padding-top: 0%;
+        }
+    }
     @keyframes imagenConTexto2 {
         0% {
-            transform: translateY(-70px);
+            transform: translateY(0px);
             opacity: 0;
         }
         100% {
-            transform: translateY(-40px);
+            transform: translateY(0px);
             opacity: 1;
         }
     }
@@ -127,4 +133,8 @@
         }
     }
 
+    .barraNavB{
+        flex-direction: column;
+        align-items: center;
+    }
 }

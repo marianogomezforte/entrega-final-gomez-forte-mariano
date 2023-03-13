@@ -323,7 +323,7 @@ iframe {
   justify-content: space-between;
   flex-wrap: nowrap;
   gap: 55px;
-  margin-left: 30%; }
+  margin-left: 10%; }
   .barraNavB li {
     list-style: none; }
     .barraNavB li a {
@@ -390,7 +390,10 @@ iframe {
   .nCard7 {
     padding: 0px 50px; }
   .nCard8 {
-    padding: 0px 50px; } }
+    padding: 0px 50px; }
+  .barraNavB {
+    gap: 35px;
+    margin-left: 0%; } }
 
 /*BREAKPOINT 768px*/
 @media (max-width: 768px) {
@@ -460,12 +463,14 @@ iframe {
     font-size: 27px; }
   .imgEquipo h3 {
     font-size: 18px; }
+  .imgEquipo h2 {
+    padding-top: 0%; }
   @keyframes imagenConTexto2 {
     0% {
-      transform: translateY(-70px);
+      transform: translateY(0px);
       opacity: 0; }
     100% {
-      transform: translateY(-40px);
+      transform: translateY(0px);
       opacity: 1; } }
   .gridServicios {
     display: grid;
@@ -490,4 +495,60 @@ iframe {
   .titulosEnfoque {
     margin: 0%; }
     .titulosEnfoque h3 {
-      font-size: 25px; } }
+      font-size: 25px; }
+  .barraNavB {
+    flex-direction: column;
+    align-items: center; } }
+
+/*BREAKPOINT 375px*/
+@media (max-width: 375px) {
+  .gridServicios img {
+    margin-left: 10px; }
+  .listaConTilde li {
+    margin-left: 15%; }
+  .imgEnfoque h2 {
+    padding-left: 20px; }
+  .diagrama img {
+    width: 365px;
+    height: 365px; } }
+
+/*BREAKPOINT 320px*/
+@media (max-width: 320px) {
+  @keyframes imagenConTexto {
+    0% {
+      transform: translateY(200px);
+      opacity: 0; }
+    100% {
+      transform: translateY(100px);
+      opacity: 1; } }
+  .descConIcono {
+    margin-top: 200px; }
+  .imgEquipo h2 {
+    font-size: 23px; }
+  .imgEquipo h3 {
+    font-size: 16px; }
+  .gridServicios img {
+    margin-left: 0px; }
+  .imgEnfoque h2 {
+    font-size: 27px;
+    padding-left: 80px;
+    padding-top: 100px; }
+  .diagrama img {
+    width: 310px;
+    height: 310px; }
+  .nCard1 {
+    margin: 0px 0px; }
+  .nCard2 {
+    margin: 0px 0px; }
+  .nCard3 {
+    margin: 0px 0px; }
+  .nCard4 {
+    margin: 0px 0px; }
+  .nCard5 {
+    margin: 0px 0px; }
+  .nCard6 {
+    margin: 0px 0px; }
+  .nCard7 {
+    margin: 0px 0px; }
+  .nCard8 {
+    margin: 0px 0px; } }

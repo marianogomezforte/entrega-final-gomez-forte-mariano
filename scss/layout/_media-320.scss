@@ -1,0 +1,74 @@
+/*BREAKPOINT 320px*/
+@media (max-width:320px){
+    //correccion de animacion index
+    @keyframes imagenConTexto {
+        0% {
+            transform: translateY(200px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(100px);
+            opacity: 1;
+        }
+    }
+    .descConIcono{
+        margin-top: 200px;
+    }
+
+    //correccion texto en imagen equipo
+    .imgEquipo{
+        h2{
+            font-size: 23px;
+        }
+        h3{
+            font-size: 16px;
+        }
+    }
+
+     //correccion posicion imagenes servicios
+    .gridServicios{
+        img{
+            margin-left: 0px;
+        }
+    }
+
+    //alineacion palabra enfoque y tamaño de imagen
+    .imgEnfoque{
+        h2{
+            font-size: 27px;
+            padding-left: 80px;
+            padding-top: 100px;
+        }
+    }
+    .diagrama{
+        img{
+            width: 310px;
+            height: 310px;
+        }
+    }
+
+    .nCard1{
+        margin: 0px 0px;
+    }
+    .nCard2{
+        margin: 0px 0px;
+    }
+    .nCard3{
+        margin: 0px 0px;
+    }
+    .nCard4{
+        margin: 0px 0px;
+    }
+    .nCard5{
+        margin: 0px 0px;
+    }
+    .nCard6{
+        margin: 0px 0px;
+    }
+    .nCard7{
+        margin: 0px 0px;
+    }
+    .nCard8{
+        margin: 0px 0px;
+    }
+}

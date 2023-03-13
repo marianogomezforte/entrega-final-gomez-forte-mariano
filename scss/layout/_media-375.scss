@@ -1,0 +1,29 @@
+/*BREAKPOINT 375px*/
+@media (max-width:375px){
+    //correccion posicion imagenes servicios
+    .gridServicios{
+        img{
+            margin-left: 10px;
+        }
+    }
+
+    //correcion recuadro de lista con tilde
+    .listaConTilde{
+        li{
+            margin-left: 15%;
+        }
+    }
+
+    //alineacion palabra enfoque y tamaño de imagen
+    .imgEnfoque{
+        h2{
+            padding-left: 20px;
+        }
+    }
+    .diagrama{
+        img{
+            width: 365px;
+            height: 365px;
+        }
+    }
+}
