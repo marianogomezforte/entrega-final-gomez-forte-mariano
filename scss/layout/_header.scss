@@ -1,31 +1,66 @@
-header{
-    display: flex;
-    background-color: $background-color-barras;
+// barra anterior
+// header{
+//     display: flex;
+//     background-color: $background-color-barras;
+//     width: 100%;
+//     justify-content:left;
+//     align-items: center;
+//     div{
+//         margin-left: 6%;
+//     }
+// }
+
+// .barraNav{
+//     display: flex;
+//     justify-content: space-between;
+//     flex-wrap: nowrap;
+//     gap: 55px;
+//     margin-left: 30%;
+//     li{
+//         list-style: none;
+//         a{
+//             text-decoration: none;
+//             font-family: 'Poppins', sans-serif;
+//             font-size: 23px;
+//             color: white;
+//             font-weight:300;
+//             &:hover{
+//                 color:$background-color-main;
+//             }
+//         }
+//     }
+// }
+
+.navWraper{
     width: 100%;
-    justify-content:left;
-    align-items: center;
-    div{
-        margin-left: 6%;
-    }
+    max-height: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
-.barraNav{
+nav{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    flex-wrap: nowrap;
-    gap: 55px;
-    margin-left: 30%;
-    li{
+    background-color: $background-color-barras;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-radius: 0.4rem;
+    box-shadow: 5px 5px 5px rgb(128, 128, 128);
+    
+    ul{
         list-style: none;
-        a{
-            text-decoration: none;
-            font-family: 'Poppins', sans-serif;
-            font-size: 23px;
-            color: white;
-            font-weight:300;
-            &:hover{
-                color:#CCCCDE;
+        display: flex;
+        gap: 2rem;
+
+        li{
+            a{
+                @include textoMenu;
             }
         }
+    }
+
+    #toggle, label{
+        display: none;
     }
 }

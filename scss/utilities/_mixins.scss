@@ -1,0 +1,10 @@
+@mixin textoMenu{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    color: white;
+    font-weight:300;
+    &:hover{
+        color:$background-color-main;
+    }
+}

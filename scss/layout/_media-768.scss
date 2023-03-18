@@ -2,14 +2,39 @@
 @media (max-width:768px){
     
     // correccion en barra de navegacion
-    header{
-        div{
-            margin-left: 0%;
+    // header{
+    //     div{
+    //         margin-left: 0%;
+    //     }
+    // }
+    // .barraNav{
+    //     gap:15px;
+    //     margin-left: 10%;
+    // }
+    .navWraper{
+        nav{
+            .menu{
+                width: 100%;
+                height: 0;
+                overflow: hidden;
+            }
+
+            ul{
+                flex-direction: column;
+                align-items: center;
+                padding: 0.5rem 0;
+            }
+
+            label{
+                display: inline-flex;
+                color: $background-color-main;
+                cursor: pointer;
+            }
+
+            #toggle:checked ~ .menu{
+                height: 100%;
+            }
         }
-    }
-    .barraNav{
-        gap:15px;
-        margin-left: 10%;
     }
 
     // se acomoda texto de la imagen
