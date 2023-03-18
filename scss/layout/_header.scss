@@ -33,9 +33,10 @@
 
 .navWraper{
     width: 100%;
-    max-height: 1000px;
+    //max-height: 1000px;
     margin: 0 auto;
     padding: 1rem;
+    background-color: $background-color-main;
 }
 
 nav{
@@ -44,7 +45,7 @@ nav{
     justify-content: space-between;
     background-color: $background-color-barras;
     align-items: center;
-    padding: 1rem 1.5rem;
+    padding: 1rem 2rem;
     border-radius: 0.4rem;
     box-shadow: 5px 5px 5px rgb(128, 128, 128);
     

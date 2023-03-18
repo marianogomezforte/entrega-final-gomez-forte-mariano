@@ -1,4 +1,9 @@
 footer{
+    width: 100%;
+    padding: 1rem;
+    background-color: $background-color-main;
+}
+.pieDePag{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,6 +13,9 @@ footer{
     font-size: 17px;
     color: white;
     font-weight:300;
+    padding: 1rem 2rem;
+    border-radius: 0.4rem;
+    box-shadow: 5px 5px 5px rgb(128, 128, 128);
 }
 
 .contacto{
