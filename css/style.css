@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box; }
 
-.navWraper {
+.barraNavResp, footer {
   width: 100%;
   margin: 0 auto;
   padding: 1rem;
@@ -33,11 +33,6 @@ nav {
         color: #CCCCDE; }
   nav #toggle, nav label {
     display: none; }
-
-footer {
-  width: 100%;
-  padding: 1rem;
-  background-color: #CCCCDE; }
 
 .pieDePag {
   display: flex;
@@ -105,7 +100,7 @@ main {
 
 /*CARDS SECCION 2 INDEX*/
 .descConIcono {
-  margin-top: 500px;
+  margin-top: 600px;
   display: flex;
   justify-content: space-evenly;
   padding: 3%; }
@@ -115,7 +110,10 @@ main {
   flex-direction: column;
   align-items: center;
   padding: 2%;
-  width: 30%; }
+  width: 30%;
+  background-color: #878e9b;
+  border-radius: 0.4rem;
+  box-shadow: 2px 5px 5px gray; }
   .card1 h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 23px;
@@ -128,7 +126,7 @@ main {
   .card1 p {
     font-family: 'Poppins', sans-serif;
     font-size: 19px;
-    color: #323741;
+    color: #1a1c1f;
     text-align: center;
     padding: 3%; }
   .card1 img {
@@ -330,23 +328,6 @@ main {
 iframe {
   width: 100%; }
 
-.barraNavB {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  gap: 55px;
-  margin-left: 10%; }
-  .barraNavB li {
-    list-style: none; }
-    .barraNavB li a {
-      text-decoration: none;
-      font-family: 'Poppins', sans-serif;
-      font-size: 23px;
-      color: white;
-      font-weight: 300; }
-      .barraNavB li a:hover {
-        color: #CCCCDE; }
-
 .botonEnviar {
   background-color: #323741;
   font-family: 'Poppins', sans-serif;
@@ -409,19 +390,19 @@ iframe {
 
 /*BREAKPOINT 768px*/
 @media (max-width: 768px) {
-  .navWraper nav .menu {
+  .barraNavResp nav .menu, footer nav .menu {
     width: 100%;
     height: 0;
     overflow: hidden; }
-  .navWraper nav ul {
+  .barraNavResp nav ul, footer nav ul {
     flex-direction: column;
     align-items: center;
     padding: 0.5rem 0; }
-  .navWraper nav label {
+  .barraNavResp nav label, footer nav label {
     display: inline-flex;
     color: #CCCCDE;
     cursor: pointer; }
-  .navWraper nav #toggle:checked ~ .menu {
+  .barraNavResp nav #toggle:checked ~ .menu, footer nav #toggle:checked ~ .menu {
     height: 100%; }
   .imagenConTexto h2 {
     font-size: 37px; }
@@ -475,7 +456,7 @@ iframe {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-  footer {
+  .pieDePag {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
@@ -532,10 +513,7 @@ iframe {
   .titulosEnfoque {
     margin: 0%; }
     .titulosEnfoque h3 {
-      font-size: 25px; }
-  .barraNavB {
-    flex-direction: column;
-    align-items: center; } }
+      font-size: 25px; } }
 
 /*BREAKPOINT 375px*/
 @media (max-width: 375px) {

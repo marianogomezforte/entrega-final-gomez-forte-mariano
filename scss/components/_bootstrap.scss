@@ -8,42 +8,4 @@ iframe{
     width: 100%;
 }
 
-.barraNavB{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    gap: 55px;
-    margin-left: 10%;
-    li{
-        list-style: none;
-        a{
-            text-decoration: none;
-            font-family: 'Poppins', sans-serif;
-            font-size: 23px;
-            color: white;
-            font-weight:300;
-            &:hover{
-                color:#CCCCDE;
-            }
-        }
-    }
-}
-
-
-// .barraNavB{
-    
-//     display: flex;
-//     justify-content: space-around;
-//     gap: 33px;
-//     li{
-//         list-style: none;
-//         a{
-//             text-decoration: none;
-//             font-family: 'Poppins', sans-serif;
-//             font-size: 21px;
-//             color: white;
-//             font-weight:300;
-//         }
-//     }
-// }
 

@@ -17,7 +17,7 @@
     }
 
     // correccion alienacion de footer
-    footer{
+    .pieDePag{
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -131,10 +131,5 @@
         h3{
             font-size: 25px;
         }
-    }
-
-    .barraNavB{
-        flex-direction: column;
-        align-items: center;
     }
 }

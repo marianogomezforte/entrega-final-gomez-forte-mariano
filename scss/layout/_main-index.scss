@@ -48,7 +48,7 @@ main{
 
 /*CARDS SECCION 2 INDEX*/
 .descConIcono{
-    margin-top: 500px;
+    margin-top: 600px;
     display: flex;
     justify-content: space-evenly;
     padding: 3%;
@@ -60,6 +60,10 @@ main{
     align-items: center;
     padding: 2%;
     width:30%;
+    background-color: $background-color-card1;
+    border-radius: 0.4rem;
+    box-shadow: 2px 5px 5px rgb(128, 128, 128);
+
     
     h4{
         font-family: 'Poppins', sans-serif;
@@ -75,7 +79,7 @@ main{
     p{
         font-family: 'Poppins', sans-serif;
         font-size: 19px;
-        color:#323741;
+        color:#1a1c1f;
         text-align: center;
         padding: 3%;
     }
