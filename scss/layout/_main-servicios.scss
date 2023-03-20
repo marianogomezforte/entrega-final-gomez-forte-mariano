@@ -1,5 +1,124 @@
 /* PAGINA SERVICIOS IMAGEN CON TITULO Y LISTA CON CHECK*/
+
 .gridServicios{
+    display: grid;
+    align-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 310px 500px 200px 310px 350px 200px 310px 250px 50px;
+    grid-template-areas: 
+    "titulo1"
+    "img1"
+    "lista1"
+    "titulo2"
+    "img2"
+    "lista2"
+    "titulo3"
+    "img3"
+    "lista3"
+    ".";
+    div{
+        h4{
+            font-family: 'Poppins', sans-serif;
+            font-size: 23px;
+            color:#d80000;
+            text-align: center;
+        }
+    }
+    
+    img{
+        border-radius: 50%;
+    }
+
+    .img1{
+        grid-area: img1;
+        justify-self: center;
+    }
+    .img2{
+        grid-area: img2;
+        justify-self: center;
+    }
+    .img3{
+        grid-area: img3;
+        justify-self: center;
+    }
+    
+    .titulo1{
+        grid-area: titulo1;
+        text-align: center;
+        background-color: $background-color-card1;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 0.4rem;
+        box-shadow: 5px 5px 5px rgb(128, 128, 128);
+    }
+    .titulo2{
+        @extend .titulo1;
+        grid-area: titulo2;
+    }
+    .titulo3{
+        @extend .titulo1;
+        grid-area: titulo3;
+    }
+    
+    .lista1{
+        grid-area: lista1;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+
+        .listaConTilde1{
+            display: grid;
+            grid-template-columns: 60px 1fr;
+            grid-template-rows: repeat(6, 1fr);
+            align-items: center;
+            margin: 1rem;
+            background-color: $background-color-lista;
+            border-radius: 0.4rem;
+            box-shadow: 5px 5px 5px rgb(128, 128, 128);
+            
+            p{
+                font-family: 'Poppins', sans-serif;
+                font-size: 1rem;
+                color:#1a1c1f;
+                padding: 0.5rem;
+            }
+        
+            .ch1, .ch2, .ch3, .ch4, .ch5, .ch6{
+                justify-self: center;
+            } 
+        }
+        
+    }
+    .lista2{
+        @extend .lista1;
+        grid-area: lista2;
+
+        .listaConTilde2{
+            @extend .listaConTilde1;
+            grid-template-rows: repeat(4, 1fr);
+        
+            .ch1, .ch2, .ch3, .ch4{
+                justify-self: center;
+            } 
+        }
+    }
+    .lista3{
+        @extend .lista1;
+        grid-area: lista3;
+
+        .listaConTilde3{
+            @extend .listaConTilde1;
+            grid-template-rows: repeat(3, 1fr);
+        
+            .ch1, .ch2, .ch3{
+                justify-self: center;
+            } 
+        }
+    }
+}
+
+/*.gridServicios{
     display: grid;
     align-items: center;
     justify-content: center;
@@ -78,5 +197,5 @@
         color:#323741;
         margin-left: 9%;
     }
-}
+}*/
 
