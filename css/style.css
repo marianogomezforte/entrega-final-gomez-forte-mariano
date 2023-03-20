@@ -415,7 +415,7 @@ iframe {
     margin-top: 12rem; } }
 
 /*BREAKPOINT 425px /530px/680px*/
-/*En pagina INDEX y CONTACTO si selecciono las medidas desde el inspector funciona ok
+/*En pagina INDEX y EQUIPO si selecciono las medidas desde el inspector funciona ok
 pero si lo desplazo lateralente para llegar a 768px se monta
 la imagen sobre las cards, de seguro no es una buena practica 
 pero me quedo sin tiempo para la entrega, pido disculpas 
@@ -508,8 +508,17 @@ como en las clases*/
     width: 30%; }
   .descConIcono2 {
     flex-direction: row;
-    justify-content: space-evenly; } }
+    justify-content: space-evenly;
+    margin-top: 42rem; } }
 
 @media (min-width: 1200px) {
   .descConIcono {
-    margin-top: 44rem; } }
+    margin-top: 44rem; }
+  .descConIcono2 {
+    margin-top: 48rem; }
+  .imgEquipo h2 {
+    margin: 0 3rem;
+    font-size: 3rem; }
+  .imgEquipo h3 {
+    margin: 0 3rem;
+    font-size: 2.3rem; } }
