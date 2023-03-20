@@ -16,51 +16,71 @@ nav {
   justify-content: space-between;
   background-color: #323741;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   border-radius: 0.4rem;
   box-shadow: 5px 5px 5px gray; }
   nav ul {
     list-style: none;
     display: flex;
-    gap: 2rem; }
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0; }
     nav ul li a {
       text-decoration: none;
       font-family: 'Poppins', sans-serif;
-      font-size: 23px;
+      font-size: 1.3rem;
       color: white;
       font-weight: 300; }
       nav ul li a:hover {
         color: #CCCCDE; }
   nav #toggle, nav label {
     display: none; }
+  nav label {
+    display: inline-flex;
+    color: #CCCCDE;
+    cursor: pointer; }
+  nav #toggle:checked ~ .menu {
+    height: 100%; }
+  nav .menu {
+    width: 100%;
+    height: 0;
+    overflow: hidden; }
 
 .pieDePag {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background-color: #323741;
   height: auto;
   font-family: 'Poppins', sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   color: white;
   font-weight: 300;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   border-radius: 0.4rem;
   box-shadow: 5px 5px 5px gray; }
 
 .contacto {
-  padding-left: 30px; }
-
-.redes {
-  padding-right: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25px; }
+  align-content: center;
+  text-align: center; }
+
+.redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .wspYnum {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
   gap: 10px; }
 
 main {
@@ -68,7 +88,7 @@ main {
 
 .imgFondo img {
   width: 100%;
-  height: 650px;
+  height: auto;
   position: absolute; }
 
 .imagenConTexto {
@@ -79,53 +99,52 @@ main {
   animation: imagenConTexto 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
   .imagenConTexto h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 40px;
+    font-size: 1.5rem;
     text-align: center;
     color: black;
     text-shadow: 3px 3px 4px #323741; }
   .imagenConTexto h3 {
     font-family: 'Poppins', sans-serif;
-    font-size: 33px;
+    font-size: 1rem;
     text-align: center;
     color: #d80000;
     text-shadow: 3px 3px 4px #323741; }
 
 @keyframes imagenConTexto {
   0% {
-    transform: translateY(500px);
+    transform: translateY(80px);
     opacity: 0; }
   100% {
-    transform: translateY(300px);
+    transform: translateY(5px);
     opacity: 1; } }
 
 /*CARDS SECCION 2 INDEX*/
 .descConIcono {
-  margin-top: 600px;
+  margin-top: 3.5rem;
   display: flex;
-  justify-content: space-evenly;
-  padding: 3%; }
+  flex-direction: column; }
 
 .card1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2%;
-  width: 30%;
+  margin: 0.5rem;
+  padding: 1rem;
   background-color: #878e9b;
   border-radius: 0.4rem;
   box-shadow: 2px 5px 5px gray; }
   .card1 h4 {
     font-family: 'Poppins', sans-serif;
-    font-size: 23px;
+    font-size: 1.2rem;
     color: #d80000;
     background-color: #d9d9d9;
-    border-radius: 19px;
-    padding: 3%;
-    margin: 20px 0px;
+    border-radius: 0.4rem;
+    padding: 0.7rem;
+    margin: 0.5rem 0;
     text-align: center; }
   .card1 p {
     font-family: 'Poppins', sans-serif;
-    font-size: 19px;
+    font-size: 1rem;
     color: #1a1c1f;
     text-align: center;
     padding: 3%; }
@@ -210,9 +229,10 @@ main {
     color: #d80000;
     background-color: #d9d9d9;
     border-radius: 19px;
-    padding: 3%;
+    padding: 0.5rem;
     margin: 20px 0px;
-    text-align: center; }
+    text-align: center;
+    width: 100%; }
   .gridEnfoque div p {
     font-family: 'Poppins', sans-serif;
     font-size: 19px;
@@ -248,37 +268,37 @@ main {
     color: #323741;
     text-align: center; }
 
-.nCard1 {
+.nCard1, .nCard2, .nCard3, .nCard4, .nCard5, .nCard6, .nCard7, .nCard8 {
   grid-area: ca1;
-  margin: 0px 20px; }
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #878e9b;
+  border-radius: 0.4rem;
+  box-shadow: 2px 5px 5px gray; }
 
 .nCard2 {
-  grid-area: ca2;
-  margin: 0px 20px; }
+  grid-area: ca2; }
 
 .nCard3 {
-  grid-area: ca3;
-  margin: 0px 20px; }
+  grid-area: ca3; }
 
 .nCard4 {
-  grid-area: ca4;
-  margin: 0px 20px; }
+  grid-area: ca4; }
 
 .nCard5 {
-  grid-area: ca5;
-  margin: 0px 20px; }
+  grid-area: ca5; }
 
 .nCard6 {
-  grid-area: ca6;
-  margin: 0px 20px; }
+  grid-area: ca6; }
 
 .nCard7 {
-  grid-area: ca7;
-  margin: 0px 20px; }
+  grid-area: ca7; }
 
 .nCard8 {
-  grid-area: ca8;
-  margin: 0px 20px; }
+  grid-area: ca8; }
 
 .diagrama {
   grid-area: diag; }
@@ -300,14 +320,14 @@ main {
   .imgEquipo h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 45px;
-    color: #ffffff;
+    color: #1a1c1f;
     text-shadow: 3px 3px 4px #323741;
     padding-left: 5%;
     padding-top: 5%; }
   .imgEquipo h3 {
     font-family: 'Poppins', sans-serif;
     font-size: 21px;
-    color: #ffffff;
+    color: #1a1c1f;
     text-shadow: 3px 3px 4px #323741;
     padding-left: 5%; }
 
@@ -349,221 +369,85 @@ iframe {
     margin: 3px;
     border-color: #323741; }
 
-/*BREAKPOINT 1024px*/
-@media (max-width: 1024px) {
-  .barraNav {
-    gap: 25px;
-    margin-left: 15%; }
-  .card1 {
-    width: 100%; }
-  .gridServicios div h4 {
-    font-size: 21px; }
-  .titulo1 {
-    padding: 5px; }
-  .titulo2 {
-    padding: 5px; }
-  .titulo3 {
-    padding: 5px; }
-  .gridEnfoque {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 500px 200px repeat(5, 0.5fr);
-    grid-template-areas: "im1 im1" "ti1 ti1" "ca1 ca2" "ca3 ca4" "ca5 ca6" "ca7 ca8" "diag diag"; }
-  .nCard1 {
-    padding: 0px 50px; }
-  .nCard2 {
-    padding: 0px 50px; }
-  .nCard3 {
-    padding: 0px 50px; }
-  .nCard4 {
-    padding: 0px 50px; }
-  .nCard5 {
-    padding: 0px 50px; }
-  .nCard6 {
-    padding: 0px 50px; }
-  .nCard7 {
-    padding: 0px 50px; }
-  .nCard8 {
-    padding: 0px 50px; }
-  .barraNavB {
-    gap: 35px;
-    margin-left: 0%; } }
+@media (min-width: 320px) {
+  .card1 p {
+    font-size: 1.1rem; }
+  .descConIcono {
+    margin-top: 8rem; }
+  @keyframes imagenConTexto {
+    0% {
+      transform: translateY(100px);
+      opacity: 0; }
+    100% {
+      transform: translateY(55px);
+      opacity: 1; } } }
+
+/*BREAKPOINT 375px*/
+@media (min-width: 375px) {
+  .imagenConTexto h2 {
+    font-size: 1.6rem; }
+  .imagenConTexto h3 {
+    font-size: 1.3rem; }
+  .descConIcono {
+    margin-top: 10rem; } }
+
+/*BREAKPOINT 425px /530px/680px*/
+/*si selecciono las medidas desde el inspector funciona ok
+pero si lo desplazo lateralente para llegar a 768px se monta
+la imagen sobre las cards, de seguro no es una buena practica 
+pero me quedo sin tiempo para la entrega, pido disculpas 
+porque no se como lo va a corregir, si haciendo click 
+sobre las medidas en el inspector o si va a mover con el mouse
+como en las clases*/
+@media (min-width: 425px) {
+  .imagenConTexto h2 {
+    font-size: 1.8rem; }
+  .imagenConTexto h3 {
+    font-size: 1.5rem; }
+  .descConIcono {
+    margin-top: 13rem; }
+  @keyframes imagenConTexto {
+    0% {
+      transform: translateY(120px);
+      opacity: 0; }
+    100% {
+      transform: translateY(75px);
+      opacity: 1; } } }
+
+@media (min-width: 530px) {
+  .descConIcono {
+    margin-top: 19rem; } }
+
+@media (min-width: 680px) {
+  .descConIcono {
+    margin-top: 23rem; } }
 
 /*BREAKPOINT 768px*/
-@media (max-width: 768px) {
-  .barraNavResp nav .menu, footer nav .menu {
-    width: 100%;
-    height: 0;
-    overflow: hidden; }
-  .barraNavResp nav ul, footer nav ul {
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem 0; }
-  .barraNavResp nav label, footer nav label {
-    display: inline-flex;
-    color: #CCCCDE;
-    cursor: pointer; }
-  .barraNavResp nav #toggle:checked ~ .menu, footer nav #toggle:checked ~ .menu {
-    height: 100%; }
+@media (min-width: 768px) {
   .imagenConTexto h2 {
-    font-size: 37px; }
+    margin: 0 3rem;
+    font-size: 2.3rem; }
   .imagenConTexto h3 {
-    font-size: 27px; }
-  .descConIcono {
-    margin-top: 500px;
-    justify-content: center;
-    flex-direction: column; }
-  .imgEquipo h2 {
-    padding-left: 3%;
-    padding-top: 12%; }
-  .imgEquipo h3 {
-    padding-left: 3%; }
-  .gridServicios {
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(6, auto);
-    grid-template-areas: ". img1 img1 . titulo1 titulo1 ." ". lista1 lista1 lista1 lista1 lista1 ." ". img2 img2 . titulo2 titulo2 ." ". lista2 lista2 lista2 lista2 lista2 ." ". img3 img3 . titulo3 titulo3 ." ". lista3 lista3 lista3 lista3 lista3 ."; }
-  .diagrama img {
-    width: 730px;
-    height: 730px; }
-  .titulosEnfoque {
-    margin: 35px; }
-  .imgEnfoque h2 {
-    padding-left: 100px; }
-  .nCard1 {
-    padding: 0px 10px; }
-  .nCard2 {
-    padding: 0px 10px; }
-  .nCard3 {
-    padding: 0px 10px; }
-  .nCard4 {
-    padding: 0px 10px; }
-  .nCard5 {
-    padding: 0px 10px; }
-  .nCard6 {
-    padding: 0px 10px; }
-  .nCard7 {
-    padding: 0px 10px; }
-  .nCard8 {
-    padding: 0px 10px; } }
-
-/*BREAKPOINT 425px*/
-@media (max-width: 425px) {
-  header {
-    justify-content: center;
-    flex-direction: column; }
-    header div {
-      margin-left: 0%; }
-  .barraNav {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .pieDePag {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .imagenConTexto h2 {
-    font-size: 27px; }
-  .imagenConTexto h3 {
-    font-size: 20px; }
-  .imgFondo img {
-    height: 350px; }
+    margin: 0 3rem;
+    font-size: 2rem; }
   @keyframes imagenConTexto {
     0% {
       transform: translateY(300px);
       opacity: 0; }
     100% {
-      transform: translateY(150px);
-      opacity: 1; } }
-  .descConIcono {
-    margin-top: 250px; }
-  .imgFondo2 img {
-    height: 350px; }
-  .imgEquipo h2 {
-    font-size: 27px; }
-  .imgEquipo h3 {
-    font-size: 18px; }
-  .imgEquipo h2 {
-    padding-top: 0%; }
-  @keyframes imagenConTexto2 {
-    0% {
-      transform: translateY(0px);
-      opacity: 0; }
-    100% {
-      transform: translateY(0px);
-      opacity: 1; } }
-  .gridServicios {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 350px 45px 650px 350px 45px 400px 350px 45px 400px;
-    grid-template-areas: "img1" "titulo1" "lista1" "img2" "titulo2" "lista2" "img3" "titulo3" "lista3"; }
-    .gridServicios img {
-      margin-left: 30px; }
-  .gridEnfoque {
-    display: flex;
-    flex-direction: column; }
-  .diagrama img {
-    width: 410px;
-    height: 410px; }
-  .imgEnfoque {
-    background-size: cover;
-    height: 230px; }
-    .imgEnfoque h2 {
-      padding-left: 0px;
-      padding-top: 21%; }
-  .titulosEnfoque {
-    margin: 0%; }
-    .titulosEnfoque h3 {
-      font-size: 25px; } }
-
-/*BREAKPOINT 375px*/
-@media (max-width: 375px) {
-  .gridServicios img {
-    margin-left: 10px; }
-  .listaConTilde li {
-    margin-left: 15%; }
-  .imgEnfoque h2 {
-    padding-left: 20px; }
-  .diagrama img {
-    width: 365px;
-    height: 365px; } }
-
-/*BREAKPOINT 320px*/
-@media (max-width: 320px) {
-  @keyframes imagenConTexto {
-    0% {
       transform: translateY(200px);
-      opacity: 0; }
-    100% {
-      transform: translateY(100px);
       opacity: 1; } }
-  .descConIcono {
-    margin-top: 200px; }
-  .imgEquipo h2 {
-    font-size: 23px; }
-  .imgEquipo h3 {
-    font-size: 16px; }
-  .gridServicios img {
-    margin-left: 0px; }
-  .imgEnfoque h2 {
-    font-size: 27px;
-    padding-left: 80px;
-    padding-top: 100px; }
-  .diagrama img {
-    width: 310px;
-    height: 310px; }
-  .nCard1 {
-    margin: 0px 0px; }
-  .nCard2 {
-    margin: 0px 0px; }
-  .nCard3 {
-    margin: 0px 0px; }
-  .nCard4 {
-    margin: 0px 0px; }
-  .nCard5 {
-    margin: 0px 0px; }
-  .nCard6 {
-    margin: 0px 0px; }
-  .nCard7 {
-    margin: 0px 0px; }
-  .nCard8 {
-    margin: 0px 0px; } }
+  .card1 {
+    margin: 1rem 4rem; }
+  .pieDePag {
+    flex-direction: row; } }
+
+/*BREAKPOINT 1024px*/
+@media (min-width: 1024px) {
+  nav ul {
+    flex-direction: row;
+    padding: 1rem 1rem; }
+  nav label {
+    display: none; }
+  nav .menu {
+    height: 50%; } }

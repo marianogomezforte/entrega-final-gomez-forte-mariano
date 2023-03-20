@@ -18,9 +18,10 @@
             color:#d80000;
             background-color: #d9d9d9;
             border-radius: 19px;
-            padding: 3%;
+            padding: 0.5rem;
             margin: 20px 0px;
             text-align: center;
+            width: 100%;
         }
         
         p{
@@ -67,35 +68,42 @@
 }
 .nCard1{
     grid-area: ca1;
-    margin: 0px 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: $background-color-card1;
+    border-radius: 0.4rem;
+    box-shadow: 2px 5px 5px rgb(128, 128, 128);
 }
 .nCard2{
+    @extend .nCard1;
     grid-area: ca2;
-    margin: 0px 20px;
 }
 .nCard3{
+    @extend .nCard1;
     grid-area: ca3;
-    margin: 0px 20px;
 }
 .nCard4{
+    @extend .nCard1;
     grid-area: ca4;
-    margin: 0px 20px;
 }
 .nCard5{
+    @extend .nCard1;
     grid-area: ca5;
-    margin: 0px 20px;
 }
 .nCard6{
+    @extend .nCard1;
     grid-area: ca6;
-    margin: 0px 20px;
 }
 .nCard7{
+    @extend .nCard1;
     grid-area: ca7;
-    margin: 0px 20px;
 }
 .nCard8{
+    @extend .nCard1;
     grid-area: ca8;
-    margin: 0px 20px;
 }
 .diagrama{
     grid-area: diag;

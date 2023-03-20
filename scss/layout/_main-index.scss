@@ -5,7 +5,7 @@ main{
 .imgFondo{
     img{
         width: 100%;
-        height: 650px;
+        height: auto;
         position: absolute;
     }
 }
@@ -18,7 +18,7 @@ main{
     
     h2{
         font-family: 'Poppins', sans-serif;
-        font-size: 40px;
+        font-size: 1.5rem;
         text-align: center;
         color: black;
         text-shadow: 3px 3px 4px #323741;
@@ -26,7 +26,7 @@ main{
 
     h3{
         font-family: 'Poppins', sans-serif;
-        font-size: 33px;
+        font-size: 1rem;
         text-align: center;
         color: #d80000;
         text-shadow: 3px 3px 4px #323741;
@@ -37,29 +37,28 @@ main{
 
 @keyframes imagenConTexto {
     0% {
-        transform: translateY(500px);
+        transform: translateY(80px);
         opacity: 0;
     }
     100% {
-        transform: translateY(300px);
+        transform: translateY(5px);
         opacity: 1;
     }
 }
 
 /*CARDS SECCION 2 INDEX*/
 .descConIcono{
-    margin-top: 600px;
+    margin-top: 3.5rem;
     display: flex;
-    justify-content: space-evenly;
-    padding: 3%;
+    flex-direction: column;
 }
 
 .card1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2%;
-    width:30%;
+    margin: 0.5rem;
+    padding: 1rem;
     background-color: $background-color-card1;
     border-radius: 0.4rem;
     box-shadow: 2px 5px 5px rgb(128, 128, 128);
@@ -67,18 +66,18 @@ main{
     
     h4{
         font-family: 'Poppins', sans-serif;
-        font-size: 23px;
+        font-size: 1.2rem;
         color:#d80000;
         background-color: #d9d9d9;
-        border-radius: 19px;
-        padding: 3%;
-        margin: 20px 0px;
+        border-radius: 0.4rem;
+        padding: 0.7rem;
+        margin: 0.5rem 0;
         text-align: center;
     }
 
     p{
         font-family: 'Poppins', sans-serif;
-        font-size: 19px;
+        font-size: 1rem;
         color:#1a1c1f;
         text-align: center;
         padding: 3%;

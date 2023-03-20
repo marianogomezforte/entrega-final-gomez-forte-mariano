@@ -1,29 +1,49 @@
 /*BREAKPOINT 375px*/
-@media (max-width:375px){
-    //correccion posicion imagenes servicios
-    .gridServicios{
-        img{
-            margin-left: 10px;
-        }
-    }
+@media (min-width:375px){
 
-    //correcion recuadro de lista con tilde
-    .listaConTilde{
-        li{
-            margin-left: 15%;
-        }
-    }
-
-    //alineacion palabra enfoque y tamaño de imagen
-    .imgEnfoque{
+    //ajusto tamaño de fuente de texto sobre la imagen
+    //pagina INDEX
+    .imagenConTexto{
         h2{
-            padding-left: 20px;
+            font-size: 1.6rem;
+        }
+        h3{
+            font-size: 1.3rem;
         }
     }
-    .diagrama{
-        img{
-            width: 365px;
-            height: 365px;
-        }
+
+    //ajusto margen superior para que no se esconda
+    //debajo de la imagen pagina INDEX
+    .descConIcono{
+        margin-top: 10rem;
     }
 }
+//     //correccion posicion imagenes servicios
+//     .gridServicios{
+//         img{
+//             margin-left: 10px;
+//         }
+//     }
+
+//     //correcion recuadro de lista con tilde
+//     .listaConTilde{
+//         li{
+//             margin-left: 15%;
+//         }
+//     }
+
+//     //alineacion palabra enfoque y tamaño de imagen
+//     .imgEnfoque{
+//         h2{
+//             padding-left: 20px;
+//         }
+//     }
+//     .diagrama{
+//         img{
+//             width: 365px;
+//             height: 365px;
+//         }
+//     }
+
+    
+// }

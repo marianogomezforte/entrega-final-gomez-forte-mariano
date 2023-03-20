@@ -1,74 +1,82 @@
-/*BREAKPOINT 320px*/
-@media (max-width:320px){
-    //correccion de animacion index
-    @keyframes imagenConTexto {
-        0% {
-            transform: translateY(200px);
-            opacity: 0;
-        }
-        100% {
-            transform: translateY(100px);
-            opacity: 1;
+// /*BREAKPOINT 320px*/
+@media (min-width:320px){
+    //ajusto tamaño de fuente de cards pagina INDEX
+    .card1{
+        p{
+            font-size: 1.1rem;
         }
     }
+
+    //ajusto margen superior para que no se esconda
+    //debajo de la imagen pagina INDEX
     .descConIcono{
-        margin-top: 200px;
+        margin-top: 8rem;
     }
 
-    //correccion texto en imagen equipo
-    .imgEquipo{
-        h2{
-            font-size: 23px;
-        }
-        h3{
-            font-size: 16px;
-        }
+    //ajuste de posicion de la animacion pagina INDEX
+    @keyframes imagenConTexto {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
     }
-
-     //correccion posicion imagenes servicios
-    .gridServicios{
-        img{
-            margin-left: 0px;
-        }
-    }
-
-    //alineacion palabra enfoque y tamaño de imagen
-    .imgEnfoque{
-        h2{
-            font-size: 27px;
-            padding-left: 80px;
-            padding-top: 100px;
-        }
-    }
-    .diagrama{
-        img{
-            width: 310px;
-            height: 310px;
-        }
-    }
-
-    .nCard1{
-        margin: 0px 0px;
-    }
-    .nCard2{
-        margin: 0px 0px;
-    }
-    .nCard3{
-        margin: 0px 0px;
-    }
-    .nCard4{
-        margin: 0px 0px;
-    }
-    .nCard5{
-        margin: 0px 0px;
-    }
-    .nCard6{
-        margin: 0px 0px;
-    }
-    .nCard7{
-        margin: 0px 0px;
-    }
-    .nCard8{
-        margin: 0px 0px;
+    100% {
+        transform: translateY(55px);
+        opacity: 1;
     }
 }
+}
+//     //correccion de animacion index
+//     @keyframes imagenConTexto {
+//         0% {
+//             transform: translateY(200px);
+//             opacity: 0;
+//         }
+//         100% {
+//             transform: translateY(100px);
+//             opacity: 1;
+//         }
+//     }
+//     .descConIcono{
+//         margin-top: 200px;
+//     }
+
+//     //correccion texto en imagen equipo
+//     .imgEquipo{
+//         h2{
+//             font-size: 23px;
+//         }
+//         h3{
+//             font-size: 16px;
+//         }
+//     }
+
+//      //correccion posicion imagenes servicios
+//     .gridServicios{
+//         img{
+//             margin-left: 0px;
+//         }
+//     }
+
+//     //alineacion palabra enfoque y tamaño de imagen
+//     .imgEnfoque{
+//         h2{
+//             font-size: 27px;
+//             padding-left: 80px;
+//             padding-top: 100px;
+//         }
+//     }
+//     .diagrama{
+//         img{
+//             width: 320px;
+//             height: 320px;
+//         }
+//     }
+
+//     .nCard1,.nCard2,.nCard3,.nCard4,.nCard5,.nCard6,.nCard7,.nCard8{
+//         margin: 5px;
+//     }
+
+//     .card1{
+//         margin:5px 0;
+//     }
+// }
