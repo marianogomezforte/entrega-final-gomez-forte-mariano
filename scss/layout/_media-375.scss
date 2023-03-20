@@ -17,6 +17,23 @@
     .descConIcono{
         margin-top: 10rem;
     }
+
+    //ajusto tamaño de fuente de texto sobre la imagen
+    //pagina CONTACTO
+    .imgEquipo{
+        h2{
+            font-size: 1.2rem;
+        }
+        h3{
+            font-size: 0.9rem;
+        }
+    }
+
+    //ajusto margen superior para que no se esconda
+    //debajo de la imagen pagina CONTACTO
+    .descConIcono2{
+        margin-top: 12rem;
+    }
 }
 //     //correccion posicion imagenes servicios
 //     .gridServicios{

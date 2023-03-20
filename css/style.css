@@ -124,7 +124,7 @@ main {
   display: flex;
   flex-direction: column; }
 
-.card1 {
+.card1, .card2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -133,7 +133,7 @@ main {
   background-color: #878e9b;
   border-radius: 0.4rem;
   box-shadow: 2px 5px 5px gray; }
-  .card1 h4 {
+  .card1 h4, .card2 h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
     color: #d80000;
@@ -142,13 +142,13 @@ main {
     padding: 0.7rem;
     margin: 0.5rem 0;
     text-align: center; }
-  .card1 p {
+  .card1 p, .card2 p {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     color: #1a1c1f;
     text-align: center;
-    padding: 3%; }
-  .card1 img {
+    padding: 1rem; }
+  .card1 img, .card2 img {
     border-radius: 50%; }
 
 /* PAGINA SERVICIOS IMAGEN CON TITULO Y LISTA CON CHECK*/
@@ -308,7 +308,7 @@ main {
 /*PAGINA EQUIPO*/
 .imgFondo2 img {
   width: 100%;
-  height: 650px;
+  height: auto;
   position: absolute; }
 
 .imgEquipo {
@@ -319,27 +319,42 @@ main {
   animation: imagenConTexto2 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
   .imgEquipo h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 45px;
+    font-size: 1rem;
     color: #1a1c1f;
     text-shadow: 3px 3px 4px #323741;
-    padding-left: 5%;
-    padding-top: 5%; }
+    padding: 0 0.5rem;
+    text-align: center; }
   .imgEquipo h3 {
     font-family: 'Poppins', sans-serif;
-    font-size: 21px;
+    font-size: 0.7rem;
     color: #1a1c1f;
     text-shadow: 3px 3px 4px #323741;
-    padding-left: 5%; }
+    padding: 0 0.5rem;
+    text-align: center; }
 
 @keyframes imagenConTexto2 {
   0% {
-    transform: translateY(-50px);
+    transform: translateY(-30px);
     opacity: 0; }
   100% {
     transform: translateY(0px);
     opacity: 1; } }
 
-/*PARA LAS CARDS DE EQUIPO UTILIZO LA MISMA CLASE DE INDEX (card1)*/
+.descConIcono2 {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column; }
+
+.card2 p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #1a1c1f;
+  text-align: center;
+  padding: 1rem; }
+
+.card2 img {
+  border-radius: 50%; }
+
 /*PAGINA CONTACTO (BOOTSTRAP)*/
 .pagContacto {
   font-family: 'Poppins', sans-serif;
@@ -370,7 +385,7 @@ iframe {
     border-color: #323741; }
 
 @media (min-width: 320px) {
-  .card1 p {
+  .card1 p, .card2 p {
     font-size: 1.1rem; }
   .descConIcono {
     margin-top: 8rem; }
@@ -380,7 +395,9 @@ iframe {
       opacity: 0; }
     100% {
       transform: translateY(55px);
-      opacity: 1; } } }
+      opacity: 1; } }
+  .card2 p {
+    font-size: 1.1rem; } }
 
 /*BREAKPOINT 375px*/
 @media (min-width: 375px) {
@@ -389,10 +406,16 @@ iframe {
   .imagenConTexto h3 {
     font-size: 1.3rem; }
   .descConIcono {
-    margin-top: 10rem; } }
+    margin-top: 10rem; }
+  .imgEquipo h2 {
+    font-size: 1.2rem; }
+  .imgEquipo h3 {
+    font-size: 0.9rem; }
+  .descConIcono2 {
+    margin-top: 12rem; } }
 
 /*BREAKPOINT 425px /530px/680px*/
-/*si selecciono las medidas desde el inspector funciona ok
+/*En pagina INDEX y CONTACTO si selecciono las medidas desde el inspector funciona ok
 pero si lo desplazo lateralente para llegar a 768px se monta
 la imagen sobre las cards, de seguro no es una buena practica 
 pero me quedo sin tiempo para la entrega, pido disculpas 
@@ -412,15 +435,21 @@ como en las clases*/
       opacity: 0; }
     100% {
       transform: translateY(75px);
-      opacity: 1; } } }
+      opacity: 1; } }
+  .descConIcono2 {
+    margin-top: 18rem; } }
 
 @media (min-width: 530px) {
   .descConIcono {
-    margin-top: 19rem; } }
+    margin-top: 19rem; }
+  .descConIcono2 {
+    margin-top: 24rem; } }
 
 @media (min-width: 680px) {
   .descConIcono {
-    margin-top: 23rem; } }
+    margin-top: 23rem; }
+  .descConIcono2 {
+    margin-top: 29rem; } }
 
 /*BREAKPOINT 768px*/
 @media (min-width: 768px) {
@@ -432,22 +461,55 @@ como en las clases*/
     font-size: 2rem; }
   @keyframes imagenConTexto {
     0% {
-      transform: translateY(300px);
+      transform: translateY(220px);
       opacity: 0; }
     100% {
-      transform: translateY(200px);
+      transform: translateY(120px);
       opacity: 1; } }
-  .card1 {
+  .card1, .card2 {
     margin: 1rem 4rem; }
   .pieDePag {
-    flex-direction: row; } }
+    flex-direction: row; }
+  .descConIcono {
+    margin-top: 30rem; }
+  .imgEquipo h2 {
+    margin: 0 3rem;
+    font-size: 2.1rem; }
+  .imgEquipo h3 {
+    margin: 0 3rem;
+    font-size: 1.8rem; } }
 
-/*BREAKPOINT 1024px*/
+/*BREAKPOINT 1024px / 1200px*/
 @media (min-width: 1024px) {
-  nav ul {
+  nav {
+    flex-wrap: nowrap; }
+    nav ul {
+      flex-direction: row;
+      padding: 1rem 1rem;
+      justify-content: space-evenly; }
+    nav label {
+      display: none; }
+    nav .menu {
+      height: 100%; }
+  .imagenConTexto h2 {
+    margin: 0 3rem;
+    font-size: 3.3rem; }
+  .imagenConTexto h3 {
+    margin: 0 3rem;
+    font-size: 2.5rem; }
+  .descConIcono {
+    margin-top: 33rem; }
+  .descConIcono {
     flex-direction: row;
-    padding: 1rem 1rem; }
-  nav label {
-    display: none; }
-  nav .menu {
-    height: 50%; } }
+    justify-content: space-evenly; }
+  .card1, .card2 {
+    margin: 1rem;
+    padding: 1rem;
+    width: 30%; }
+  .descConIcono2 {
+    flex-direction: row;
+    justify-content: space-evenly; } }
+
+@media (min-width: 1200px) {
+  .descConIcono {
+    margin-top: 44rem; } }

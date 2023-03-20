@@ -2,7 +2,7 @@
 .imgFondo2{
     img{
         width: 100%;
-        height: 650px;
+        height: auto;
         position: absolute;
     }
 }
@@ -15,25 +15,26 @@
 
     h2{
         font-family: 'Poppins', sans-serif;
-        font-size: 45px;
+        font-size: 1rem;
         color: #1a1c1f;
         text-shadow: 3px 3px 4px #323741;
-        padding-left: 5%;
-        padding-top: 5%;
+        padding: 0 0.5rem;
+        text-align: center;
     }
 
     h3{
         font-family: 'Poppins', sans-serif;
-        font-size: 21px;
+        font-size: 0.7rem;
         color: #1a1c1f;
         text-shadow: 3px 3px 4px #323741;
-        padding-left: 5%;
+        padding: 0 0.5rem;
+        text-align: center;
     }
 }
 
 @keyframes imagenConTexto2 {
     0% {
-        transform: translateY(-50px);
+        transform: translateY(-30px);
         opacity: 0;
     }
     100% {
@@ -42,4 +43,24 @@
     }
 }
 
-/*PARA LAS CARDS DE EQUIPO UTILIZO LA MISMA CLASE DE INDEX (card1)*/
+.descConIcono2{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card2{
+    @extend .card1;
+
+    p{
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        color:#1a1c1f;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    img{
+        border-radius: 50%;
+    }
+}

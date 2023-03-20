@@ -16,11 +16,11 @@
     //ajuste de posicion de la animacion pagina INDEX
     @keyframes imagenConTexto {
         0% {
-            transform: translateY(300px);
+            transform: translateY(220px);
             opacity: 0;
         }
         100% {
-            transform: translateY(200px);
+            transform: translateY(120px);
             opacity: 1;
         }
     }
@@ -33,6 +33,25 @@
     //ajuste de footer
     .pieDePag{
         flex-direction: row;
+    }
+
+    //ajusto margen superior para que no se esconda
+    //debajo de la imagen pagina INDEX
+    .descConIcono{
+        margin-top: 30rem;
+    }
+
+    //ajusto tamaño de fuente de texto sobre la imagen
+    //pagina CONTACTO
+    .imgEquipo{
+        h2{
+            margin: 0 3rem;
+            font-size: 2.1rem;
+        }
+        h3{
+            margin: 0 3rem;
+            font-size: 1.8rem;
+        }
     }
 }
     

@@ -1,5 +1,5 @@
 /*BREAKPOINT 425px /530px/680px*/
-/*si selecciono las medidas desde el inspector funciona ok
+/*En pagina INDEX y CONTACTO si selecciono las medidas desde el inspector funciona ok
 pero si lo desplazo lateralente para llegar a 768px se monta
 la imagen sobre las cards, de seguro no es una buena practica 
 pero me quedo sin tiempo para la entrega, pido disculpas 
@@ -36,6 +36,12 @@ como en las clases*/
             opacity: 1;
         }
     }
+
+    //ajusto margen superior para que no se esconda
+    //debajo de la imagen pagina CONTACTO
+    .descConIcono2{
+        margin-top: 18rem;
+    }
 }
 @media (min-width:530px){
     //ajusto margen superior para que no se esconda
@@ -43,12 +49,24 @@ como en las clases*/
     .descConIcono{
         margin-top: 19rem;
     }
+
+    //ajusto margen superior para que no se esconda
+    //debajo de la imagen pagina CONTACTO
+    .descConIcono2{
+        margin-top: 24rem;
+    }
 }
 @media (min-width:680px){
     //ajusto margen superior para que no se esconda
     //debajo de la imagen pagina INDEX
     .descConIcono{
         margin-top: 23rem;
+    }
+
+    //ajusto margen superior para que no se esconda
+    //debajo de la imagen pagina CONTACTO
+    .descConIcono2{
+        margin-top: 29rem;
     }
 }
 //     //correccion barra de navegacion, todavia no se como hacer

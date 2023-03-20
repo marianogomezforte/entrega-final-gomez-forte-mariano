@@ -1,16 +1,65 @@
-/*BREAKPOINT 1024px*/
+/*BREAKPOINT 1024px / 1200px*/
 @media (min-width:1024px){
+
+    //ajusto barra de navegacion
     nav{
+        flex-wrap: nowrap;
         ul{
             flex-direction: row;
             padding: 1rem 1rem;
+            justify-content: space-evenly;
         }
         label{
             display: none;
         }
         .menu{
-            height: 50%;
+            height: 100%;
         }
+    }
+
+    //ajusto tamaño de fuente de texto sobre la imagen
+    //pagina INDEX
+    .imagenConTexto{
+        h2{
+            margin: 0 3rem;
+            font-size: 3.3rem;
+        }
+        h3{
+            margin: 0 3rem;
+            font-size: 2.5rem;
+        }
+    }
+    
+    //ajusto margen superior para que no se esconda
+    //debajo de la imagen pagina INDEX
+    .descConIcono{
+        margin-top: 33rem;
+    }
+
+    //ajusto orden de las cards pagina INDEX
+    .descConIcono{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .card1{
+        margin: 1rem;
+        padding: 1rem;
+        width: 30%;
+    }
+
+    //ajusto orden de las cards pagina CONTACTO
+    .descConIcono2{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+}
+
+@media (min-width:1200px){
+    //ajusto margen superior para que no se esconda
+    //debajo de la imagen pagina INDEX
+    .descConIcono{
+        margin-top: 44rem;
     }
 }
 

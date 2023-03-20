@@ -15,15 +15,22 @@
 
     //ajuste de posicion de la animacion pagina INDEX
     @keyframes imagenConTexto {
-    0% {
-        transform: translateY(100px);
-        opacity: 0;
+        0% {
+            transform: translateY(100px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(55px);
+            opacity: 1;
+        }
     }
-    100% {
-        transform: translateY(55px);
-        opacity: 1;
+
+    //ajusto tamaño de fuente de cards pagina CONTACTO
+    .card2{
+        p{
+            font-size: 1.1rem;
+        }
     }
-}
 }
 //     //correccion de animacion index
 //     @keyframes imagenConTexto {
