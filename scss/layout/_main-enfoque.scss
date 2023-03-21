@@ -1,5 +1,148 @@
 .gridEnfoque{
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12,auto);
+    justify-content: center;
+    grid-template-areas: 
+    "im1"
+    "tex"
+    "ti1"
+    "ca1"
+    "ca2"
+    "ca3"
+    "ca4"
+    "ca5"
+    "ca6"
+    "ca7"
+    "ca8"
+    "diag"
+    ;
+    
+    .imgEnfoque{
+        grid-area: im1;
+        img{
+            width: 100%;
+            height: auto;
+            position: absolute;
+        }
+    }
+    .imagenTextoEnfoque{
+        grid-area: tex;
+        position: relative;
+        margin-bottom: 200px;
+        animation: imagenConTexto3 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        h2{
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 3px 3px 4px #323741;
+        }
+    }
+    @keyframes imagenConTexto3 {
+        0% {
+            transform: translateY(80px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(70px);
+            opacity: 1;
+        }
+    }
+
+    .titulosEnfoque{
+        grid-area: ti1;
+        padding: 0.3rem;
+        h3{
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2rem;
+            text-align: center;
+            color: #d80000;
+            text-shadow: 3px 3px 4px #323741;
+        }
+        
+        p{
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.9rem;
+            color:#323741;
+            text-align: center;
+        }
+    }
+
+    .nCard1{
+        grid-area: ca1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0.5rem;
+        padding: 1rem;
+        background-color: $background-color-card1;
+        border-radius: 0.4rem;
+        box-shadow: 2px 5px 5px rgb(128, 128, 128);
+        
+        h4{
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2rem;
+            color:#d80000;
+            background-color: #d9d9d9;
+            border-radius: 0.4rem;
+            padding: 0.7rem;
+            margin: 0.5rem 0;
+            text-align: center;
+        }
+        
+        p{
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            color:#1a1c1f;
+            text-align: center;
+            padding: 1rem;
+        }
+    }
+    .nCard2{
+        @extend .nCard1;
+        grid-area: ca2;
+    }
+    .nCard3{
+        @extend .nCard1;
+        grid-area: ca3;
+    }
+    .nCard4{
+        @extend .nCard1;
+        grid-area: ca4;
+    }
+    .nCard5{
+        @extend .nCard1;
+        grid-area: ca5;
+    }
+    .nCard6{
+        @extend .nCard1;
+        grid-area: ca6;
+    }
+    .nCard7{
+        @extend .nCard1;
+        grid-area: ca7;
+    }
+    .nCard8{
+        @extend .nCard1;
+        grid-area: ca8;
+    }
+
+    .diagrama{
+        grid-area: diag;
+        img{
+            width: 100%;
+            height: auto;
+            padding: 1rem;
+        }
+    }
+
+    
+    
+}
+
+/*.gridEnfoque{
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 500px 200px repeat(3, 0.5fr);
     justify-items: center;
@@ -110,4 +253,4 @@
     img{
         padding: 30px;
     }
-}
+}*/

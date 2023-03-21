@@ -69,4 +69,43 @@
             margin: 0 6rem;
         }
     }
+
+    //ajusto animacion pagina ENFOQUE
+    @keyframes imagenConTexto3 {
+        0% {
+            transform: translateY(220px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(210px);
+            opacity: 1;
+        }
+    }
+    //ajusto posicion de elementos en pagina enfoque
+    .gridEnfoque{
+        grid-template-columns: 2fr;
+        grid-template-columns: repeat(8,auto);
+        grid-template-areas: 
+        "im1 im1"
+        "tex tex"
+        "ti1 ti1"
+        "ca1 ca2"
+        "ca3 ca4"
+        "ca5 ca6"
+        "ca7 ca8"
+        "diag diag";
+
+        .titulosEnfoque{
+            h3{
+                font-size: 2.3rem;
+            }
+            p{
+                font-size: 1.3rem;
+            }
+        }
+
+        .nCard1{
+            margin: 1.5rem;
+        }
+    }
 }

@@ -51,6 +51,33 @@ como en las clases*/
             } 
         }
     }
+
+    //ajusto texto y animacion pagina ENFOQUE
+    @keyframes imagenConTexto3 {
+        0% {
+            transform: translateY(110px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(100px);
+            opacity: 1;
+        }
+    }
+    .gridEnfoque{
+        .imagenTextoEnfoque{
+            h2{
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    //ajusto margen inferior para que no se esconda
+    //debajo de la imagen pagina ENFOQUE
+    .gridEnfoque{
+        .imagenTextoEnfoque{
+            margin-bottom: 16rem;
+        }
+    }
 }
 @media (min-width:530px){
     //ajusto margen superior para que no se esconda
@@ -64,6 +91,14 @@ como en las clases*/
     .descConIcono2{
         margin-top: 24rem;
     }
+
+    //ajusto margen inferior para que no se esconda
+    //debajo de la imagen pagina ENFOQUE
+    .gridEnfoque{
+        .imagenTextoEnfoque{
+            margin-bottom: 22rem;
+        }
+    }
 }
 @media (min-width:680px){
     //ajusto margen superior para que no se esconda
@@ -76,5 +111,13 @@ como en las clases*/
     //debajo de la imagen pagina EQUIPO
     .descConIcono2{
         margin-top: 29rem;
+    }
+
+    //ajusto margen inferior para que no se esconda
+    //debajo de la imagen pagina ENFOQUE
+    .gridEnfoque{
+        .imagenTextoEnfoque{
+            margin-bottom: 25rem;
+        }
     }
 }

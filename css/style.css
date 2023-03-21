@@ -301,92 +301,208 @@ main {
 }*/
 .gridEnfoque {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 500px 200px repeat(3, 0.5fr);
-  justify-items: center;
-  grid-template-areas: "im1 im1 im1 im1" "ti1 ti1 ti1 ti1" "ca1 ca2 ca3 ca4" "ca5 ca6 ca7 ca8" "diag diag diag diag"; }
-  .gridEnfoque div h4 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 23px;
-    color: #d80000;
-    background-color: #d9d9d9;
-    border-radius: 19px;
-    padding: 0.5rem;
-    margin: 20px 0px;
-    text-align: center;
-    width: 100%; }
-  .gridEnfoque div p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 19px;
-    color: #323741;
-    text-align: center; }
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(12, auto);
+  justify-content: center;
+  grid-template-areas: "im1" "tex" "ti1" "ca1" "ca2" "ca3" "ca4" "ca5" "ca6" "ca7" "ca8" "diag"; }
+  .gridEnfoque .imgEnfoque {
+    grid-area: im1; }
+    .gridEnfoque .imgEnfoque img {
+      width: 100%;
+      height: auto;
+      position: absolute; }
+  .gridEnfoque .imagenTextoEnfoque {
+    grid-area: tex;
+    position: relative;
+    margin-bottom: 200px;
+    animation: imagenConTexto3 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+    .gridEnfoque .imagenTextoEnfoque h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2rem;
+      text-align: center;
+      color: #ffffff;
+      text-shadow: 3px 3px 4px #323741; }
 
-.imgEnfoque {
-  grid-area: im1;
-  background-image: url("../assets/img/enfoque-nuevo-redim.jpg");
-  width: 100%;
-  height: 500px;
-  background-size: cover; }
-  .imgEnfoque h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 45px;
-    text-align: center;
-    color: #ffffff;
-    text-shadow: 3px 3px 4px #323741;
-    padding-top: 27%; }
+@keyframes imagenConTexto3 {
+  0% {
+    transform: translateY(80px);
+    opacity: 0; }
+  100% {
+    transform: translateY(70px);
+    opacity: 1; } }
+  .gridEnfoque .titulosEnfoque {
+    grid-area: ti1;
+    padding: 0.3rem; }
+    .gridEnfoque .titulosEnfoque h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.2rem;
+      text-align: center;
+      color: #d80000;
+      text-shadow: 3px 3px 4px #323741; }
+    .gridEnfoque .titulosEnfoque p {
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.9rem;
+      color: #323741;
+      text-align: center; }
+  .gridEnfoque .nCard1, .gridEnfoque .nCard2, .gridEnfoque .nCard3, .gridEnfoque .nCard4, .gridEnfoque .nCard5, .gridEnfoque .nCard6, .gridEnfoque .nCard7, .gridEnfoque .nCard8 {
+    grid-area: ca1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+    padding: 1rem;
+    background-color: #878e9b;
+    border-radius: 0.4rem;
+    box-shadow: 2px 5px 5px gray; }
+    .gridEnfoque .nCard1 h4, .gridEnfoque .nCard2 h4, .gridEnfoque .nCard3 h4, .gridEnfoque .nCard4 h4, .gridEnfoque .nCard5 h4, .gridEnfoque .nCard6 h4, .gridEnfoque .nCard7 h4, .gridEnfoque .nCard8 h4 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.2rem;
+      color: #d80000;
+      background-color: #d9d9d9;
+      border-radius: 0.4rem;
+      padding: 0.7rem;
+      margin: 0.5rem 0;
+      text-align: center; }
+    .gridEnfoque .nCard1 p, .gridEnfoque .nCard2 p, .gridEnfoque .nCard3 p, .gridEnfoque .nCard4 p, .gridEnfoque .nCard5 p, .gridEnfoque .nCard6 p, .gridEnfoque .nCard7 p, .gridEnfoque .nCard8 p {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      color: #1a1c1f;
+      text-align: center;
+      padding: 1rem; }
+  .gridEnfoque .nCard2 {
+    grid-area: ca2; }
+  .gridEnfoque .nCard3 {
+    grid-area: ca3; }
+  .gridEnfoque .nCard4 {
+    grid-area: ca4; }
+  .gridEnfoque .nCard5 {
+    grid-area: ca5; }
+  .gridEnfoque .nCard6 {
+    grid-area: ca6; }
+  .gridEnfoque .nCard7 {
+    grid-area: ca7; }
+  .gridEnfoque .nCard8 {
+    grid-area: ca8; }
+  .gridEnfoque .diagrama {
+    grid-area: diag; }
+    .gridEnfoque .diagrama img {
+      width: 100%;
+      height: auto;
+      padding: 1rem; }
 
-.titulosEnfoque {
-  grid-area: ti1;
-  align-self: center; }
-  .titulosEnfoque h3 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 36px;
-    text-align: center;
-    color: #d80000;
-    text-shadow: 3px 3px 4px #323741; }
-  .titulosEnfoque p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 23px;
-    color: #323741;
-    text-align: center; }
+/*.gridEnfoque{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 500px 200px repeat(3, 0.5fr);
+    justify-items: center;
+    grid-template-areas:
+    "im1 im1 im1 im1"
+    "ti1 ti1 ti1 ti1"
+    "ca1 ca2 ca3 ca4"
+    "ca5 ca6 ca7 ca8"
+    "diag diag diag diag"
+    ;
 
-.nCard1, .nCard2, .nCard3, .nCard4, .nCard5, .nCard6, .nCard7, .nCard8 {
-  grid-area: ca1;
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  background-color: #878e9b;
-  border-radius: 0.4rem;
-  box-shadow: 2px 5px 5px gray; }
+    div{
+        h4{
+            font-family: 'Poppins', sans-serif;
+            font-size: 23px;
+            color:#d80000;
+            background-color: #d9d9d9;
+            border-radius: 19px;
+            padding: 0.5rem;
+            margin: 20px 0px;
+            text-align: center;
+            width: 100%;
+        }
+        
+        p{
+            font-family: 'Poppins', sans-serif;
+            font-size: 19px;
+            color:#323741;
+            text-align: center;
+        }
+    }
+}
 
-.nCard2 {
-  grid-area: ca2; }
-
-.nCard3 {
-  grid-area: ca3; }
-
-.nCard4 {
-  grid-area: ca4; }
-
-.nCard5 {
-  grid-area: ca5; }
-
-.nCard6 {
-  grid-area: ca6; }
-
-.nCard7 {
-  grid-area: ca7; }
-
-.nCard8 {
-  grid-area: ca8; }
-
-.diagrama {
-  grid-area: diag; }
-  .diagrama img {
-    padding: 30px; }
-
+.imgEnfoque{
+    grid-area: im1;
+    background-image: url("../assets/img/enfoque-nuevo-redim.jpg");
+    width: 100%;
+    height: 500px;
+    background-size:cover;
+    h2{
+        font-family: 'Poppins', sans-serif;
+        font-size: 45px;
+        text-align: center;
+        color: #ffffff;
+        text-shadow: 3px 3px 4px #323741;
+        padding-top: 27%;
+    }
+}
+.titulosEnfoque{
+    grid-area: ti1;
+    align-self: center;
+    h3{
+        font-family: 'Poppins', sans-serif;
+        font-size: 36px;
+        text-align: center;
+        color: #d80000;
+        text-shadow: 3px 3px 4px #323741;
+    }
+    
+    p{
+        font-family: 'Poppins', sans-serif;
+        font-size: 23px;
+        color:#323741;
+        text-align: center;
+    }
+}
+.nCard1{
+    grid-area: ca1;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: $background-color-card1;
+    border-radius: 0.4rem;
+    box-shadow: 2px 5px 5px rgb(128, 128, 128);
+}
+.nCard2{
+    @extend .nCard1;
+    grid-area: ca2;
+}
+.nCard3{
+    @extend .nCard1;
+    grid-area: ca3;
+}
+.nCard4{
+    @extend .nCard1;
+    grid-area: ca4;
+}
+.nCard5{
+    @extend .nCard1;
+    grid-area: ca5;
+}
+.nCard6{
+    @extend .nCard1;
+    grid-area: ca6;
+}
+.nCard7{
+    @extend .nCard1;
+    grid-area: ca7;
+}
+.nCard8{
+    @extend .nCard1;
+    grid-area: ca8;
+}
+.diagrama{
+    grid-area: diag;
+    img{
+        padding: 30px;
+    }
+}*/
 /*PAGINA EQUIPO*/
 .imgFondo2 img {
   width: 100%;
@@ -498,7 +614,16 @@ iframe {
   .imgEquipo h3 {
     font-size: 0.9rem; }
   .descConIcono2 {
-    margin-top: 12rem; } }
+    margin-top: 12rem; }
+  @keyframes imagenConTexto3 {
+    0% {
+      transform: translateY(100px);
+      opacity: 0; }
+    100% {
+      transform: translateY(90px);
+      opacity: 1; } }
+  .gridEnfoque .imagenTextoEnfoque h2 {
+    font-size: 2.3rem; } }
 
 /*BREAKPOINT 425px /530px/680px*/
 /*En pagina INDEX y EQUIPO si selecciono las medidas desde el inspector funciona ok
@@ -525,19 +650,34 @@ como en las clases*/
   .descConIcono2 {
     margin-top: 18rem; }
   .lista1 .listaConTilde1 .ch1, .gridServicios .lista2 .listaConTilde1 .ch1, .gridServicios .lista3 .listaConTilde1 .ch1, .gridServicios .lista2 .listaConTilde2 .ch1, .gridServicios .lista3 .listaConTilde3 .ch1, .lista1 .listaConTilde1 .ch2, .gridServicios .lista2 .listaConTilde1 .ch2, .gridServicios .lista3 .listaConTilde1 .ch2, .gridServicios .lista2 .listaConTilde2 .ch2, .gridServicios .lista3 .listaConTilde3 .ch2, .lista1 .listaConTilde1 .ch3, .gridServicios .lista2 .listaConTilde1 .ch3, .gridServicios .lista3 .listaConTilde1 .ch3, .gridServicios .lista2 .listaConTilde2 .ch3, .gridServicios .lista3 .listaConTilde3 .ch3, .lista1 .listaConTilde1 .ch4, .gridServicios .lista2 .listaConTilde1 .ch4, .gridServicios .lista3 .listaConTilde1 .ch4, .gridServicios .lista2 .listaConTilde2 .ch4, .gridServicios .lista3 .listaConTilde3 .ch4, .lista1 .listaConTilde1 .ch5, .gridServicios .lista2 .listaConTilde1 .ch5, .gridServicios .lista3 .listaConTilde1 .ch5, .gridServicios .lista2 .listaConTilde2 .ch5, .gridServicios .lista3 .listaConTilde3 .ch5, .lista1 .listaConTilde1 .ch6, .gridServicios .lista2 .listaConTilde1 .ch6, .gridServicios .lista3 .listaConTilde1 .ch6, .gridServicios .lista2 .listaConTilde2 .ch6, .gridServicios .lista3 .listaConTilde3 .ch6 {
-    padding: 0.8rem 0; } }
+    padding: 0.8rem 0; }
+  @keyframes imagenConTexto3 {
+    0% {
+      transform: translateY(110px);
+      opacity: 0; }
+    100% {
+      transform: translateY(100px);
+      opacity: 1; } }
+  .gridEnfoque .imagenTextoEnfoque h2 {
+    font-size: 2.5rem; }
+  .gridEnfoque .imagenTextoEnfoque {
+    margin-bottom: 16rem; } }
 
 @media (min-width: 530px) {
   .descConIcono {
     margin-top: 19rem; }
   .descConIcono2 {
-    margin-top: 24rem; } }
+    margin-top: 24rem; }
+  .gridEnfoque .imagenTextoEnfoque {
+    margin-bottom: 22rem; } }
 
 @media (min-width: 680px) {
   .descConIcono {
     margin-top: 23rem; }
   .descConIcono2 {
-    margin-top: 29rem; } }
+    margin-top: 29rem; }
+  .gridEnfoque .imagenTextoEnfoque {
+    margin-bottom: 25rem; } }
 
 /*BREAKPOINT 768px*/
 @media (min-width: 768px) {
@@ -571,7 +711,24 @@ como en las clases*/
     grid-template-rows: 170px 500px 170px 350px 170px 310px;
     grid-template-areas: "titulo1 titulo1" "img1 lista1" "titulo2 titulo2" "lista2 img2" "titulo3 titulo3" "img3 lista3"; }
     .gridServicios .titulo1, .gridServicios .titulo2, .gridServicios .titulo3, .gridServicios .titulo2, .gridServicios .titulo3 {
-      margin: 0 6rem; } }
+      margin: 0 6rem; }
+  @keyframes imagenConTexto3 {
+    0% {
+      transform: translateY(220px);
+      opacity: 0; }
+    100% {
+      transform: translateY(210px);
+      opacity: 1; } }
+  .gridEnfoque {
+    grid-template-columns: 2fr;
+    grid-template-columns: repeat(8, auto);
+    grid-template-areas: "im1 im1" "tex tex" "ti1 ti1" "ca1 ca2" "ca3 ca4" "ca5 ca6" "ca7 ca8" "diag diag"; }
+    .gridEnfoque .titulosEnfoque h3 {
+      font-size: 2.3rem; }
+    .gridEnfoque .titulosEnfoque p {
+      font-size: 1.3rem; }
+    .gridEnfoque .nCard1, .gridEnfoque .nCard2, .gridEnfoque .nCard3, .gridEnfoque .nCard4, .gridEnfoque .nCard5, .gridEnfoque .nCard6, .gridEnfoque .nCard7, .gridEnfoque .nCard8 {
+      margin: 1.5rem; } }
 
 /*BREAKPOINT 1024px / 1200px*/
 @media (min-width: 1024px) {
