@@ -42,6 +42,15 @@ como en las clases*/
     .descConIcono2{
         margin-top: 18rem;
     }
+
+    //ajusto listas con tilde para que se vea como la lista 2 y 3
+    .lista1{
+        .listaConTilde1{
+            .ch1, .ch2, .ch3, .ch4, .ch5, .ch6{
+                padding: 0.8rem 0;
+            } 
+        }
+    }
 }
 @media (min-width:530px){
     //ajusto margen superior para que no se esconda
@@ -69,53 +78,3 @@ como en las clases*/
         margin-top: 29rem;
     }
 }
-
-//     //correccion de alineacion elementos servicio
-//     .gridServicios{
-//         display: grid;
-//         align-items: center;
-        
-//         grid-template-columns: 1fr;
-//         grid-template-rows: 350px 45px 650px 350px 45px 400px 350px 45px 400px;
-//         grid-template-areas: 
-//         "img1"
-//         "titulo1"
-//         "lista1"
-//         "img2"
-//         "titulo2"
-//         "lista2"
-//         "img3"
-//         "titulo3"
-//         "lista3";
-
-//         img{
-//             margin-left: 30px;
-//         }
-//     }
-
-//     //correccion de alineacion elementos enfoque
-//     .gridEnfoque{
-//         display: flex;
-//         flex-direction: column;
-//     }
-//     .diagrama{
-//         img{
-//             width: 410px;
-//             height: 410px;
-//         }
-//     }
-//     .imgEnfoque{
-//         background-size: cover;
-//         height: 230px;
-//         h2{
-//             padding-left: 0px;
-//             padding-top: 21%;
-//         }
-//     }
-//     .titulosEnfoque{
-//         margin: 0%;
-//         h3{
-//             font-size: 25px;
-//         }
-//     }
-// }

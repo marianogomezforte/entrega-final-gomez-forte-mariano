@@ -53,79 +53,20 @@
             font-size: 1.8rem;
         }
     }
+
+    .gridServicios{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 170px 500px 170px 350px 170px 310px;
+        grid-template-areas:
+        "titulo1 titulo1"
+        "img1 lista1"
+        "titulo2 titulo2"
+        "lista2 img2"
+        "titulo3 titulo3"
+        "img3 lista3";
+
+        .titulo1, .titulo2, .titulo3{
+            margin: 0 6rem;
+        }
+    }
 }
-    
-
-
-//     // cards en columna
-//     .descConIcono{
-//         margin-top: 500px;
-//         justify-content: center;
-//         flex-direction: column;
-//     }
-
-//     // correccion animacion
-//     .imgEquipo{
-//         h2{
-//             padding-left: 3%;
-//             padding-top: 12%;
-//         }
-//         h3{
-//             padding-left: 3%;
-//         }
-//     }
-
-//     // correccion grid de servicios
-//     .gridServicios{
-//         grid-template-columns: repeat(7, 1fr);
-//         grid-template-rows: repeat(6, auto);
-//         grid-template-areas: 
-//         ". img1 img1 . titulo1 titulo1 ."
-//         ". lista1 lista1 lista1 lista1 lista1 ."
-//         ". img2 img2 . titulo2 titulo2 ."
-//         ". lista2 lista2 lista2 lista2 lista2 ."
-//         ". img3 img3 . titulo3 titulo3 ."
-//         ". lista3 lista3 lista3 lista3 lista3 .";
-//     }
-
-//     .diagrama{
-//         img{
-//             width: 730px;
-//             height: 730px;
-//         }      
-//     }
-
-//     .titulosEnfoque{
-//         margin: 35px;
-//     }
-//     .imgEnfoque{
-//         h2{
-//             padding-left: 100px;
-//         }
-//     }
-
-//     .nCard1{
-//         padding: 0px 10px;
-//     }
-//     .nCard2{
-//         padding: 0px 10px;
-//     }
-//     .nCard3{
-//         padding: 0px 10px;
-//     }
-//     .nCard4{
-//         padding: 0px 10px;
-//     }
-//     .nCard5{
-//         padding: 0px 10px;
-//     }
-//     .nCard6{
-//         padding: 0px 10px;
-//     }
-//     .nCard7{
-//         padding: 0px 10px;
-//     }
-//     .nCard8{
-//         padding: 0px 10px;
-//     }
-// }

@@ -31,59 +31,20 @@
             font-size: 1.1rem;
         }
     }
+
+    //ajusto listas con tilde para que se vea como la lista1
+    .lista2{
+        .listaConTilde2{
+            .ch1, .ch2, .ch3, .ch4{
+                padding: 0.8rem 0;
+            }
+        }
+    }
+    .lista3{
+        .listaConTilde3{
+            .ch1, .ch2, .ch3{
+                padding: 0.8rem 0;
+            }
+        }
+    }
 }
-//     //correccion de animacion index
-//     @keyframes imagenConTexto {
-//         0% {
-//             transform: translateY(200px);
-//             opacity: 0;
-//         }
-//         100% {
-//             transform: translateY(100px);
-//             opacity: 1;
-//         }
-//     }
-//     .descConIcono{
-//         margin-top: 200px;
-//     }
-
-//     //correccion texto en imagen equipo
-//     .imgEquipo{
-//         h2{
-//             font-size: 23px;
-//         }
-//         h3{
-//             font-size: 16px;
-//         }
-//     }
-
-//      //correccion posicion imagenes servicios
-//     .gridServicios{
-//         img{
-//             margin-left: 0px;
-//         }
-//     }
-
-//     //alineacion palabra enfoque y tamaño de imagen
-//     .imgEnfoque{
-//         h2{
-//             font-size: 27px;
-//             padding-left: 80px;
-//             padding-top: 100px;
-//         }
-//     }
-//     .diagrama{
-//         img{
-//             width: 320px;
-//             height: 320px;
-//         }
-//     }
-
-//     .nCard1,.nCard2,.nCard3,.nCard4,.nCard5,.nCard6,.nCard7,.nCard8{
-//         margin: 5px;
-//     }
-
-//     .card1{
-//         margin:5px 0;
-//     }
-// }
