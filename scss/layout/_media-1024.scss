@@ -53,6 +53,64 @@
         justify-content: space-evenly;
         margin-top: 42rem;
     }
+
+    //ajusto animacion pagina ENFOQUE
+    @keyframes imagenConTexto3 {
+        0% {
+            transform: translateY(260px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(250px);
+            opacity: 1;
+        }
+    }
+    //ajusto posicion de elementos en pagina enfoque
+    .gridEnfoque{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(6,auto);
+        grid-template-areas:
+        "im1 im1 im1 im1"
+        "tex tex tex tex"
+        "ti1 ti1 ti1 ti1"
+        "ca1 ca2 ca3 ca4"
+        "ca5 ca6 ca7 ca8"
+        "diag diag diag diag"
+        ;
+
+        .titulosEnfoque{
+            h3{
+                font-size: 2.3rem;
+            }
+            p{
+                font-size: 1.3rem;
+            }
+        }
+
+        .nCard1{
+            margin: 1rem;
+            padding: 1rem;
+            width: 85%;
+        }
+
+        .imagenTextoEnfoque{
+            h2{
+                font-size: 4.9rem;
+            }
+        }
+
+        //ajusto margen inferior para que no se esconda
+        //debajo de la imagen pagina ENFOQUE
+        .imagenTextoEnfoque{
+            margin-bottom: 36rem;
+        }
+
+        .diagrama{
+            img{
+                padding: 5rem 10rem;
+            }
+        }
+    }
 }
 
 @media (min-width:1200px){
@@ -78,6 +136,26 @@
         h3{
             margin: 0 3rem;
             font-size: 2.3rem;
+        }
+    }
+
+    //ajusto margen inferior para que no se esconda
+    //debajo de la imagen pagina ENFOQUE
+    .gridEnfoque{
+        .imagenTextoEnfoque{
+            margin-bottom: 49rem;
+        }
+    }
+
+    //ajusto animacion pagina ENFOQUE
+    @keyframes imagenConTexto3 {
+        0% {
+            transform: translateY(380px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(370px);
+            opacity: 1;
         }
     }
 }

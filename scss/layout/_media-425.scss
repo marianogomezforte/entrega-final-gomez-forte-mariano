@@ -69,6 +69,22 @@ como en las clases*/
                 font-size: 2.5rem;
             }
         }
+
+        //ajusto tamaño de titulos
+        .titulosEnfoque{
+            h3{
+                font-size: 1.6rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+
+        //ajusto margen inferior para que no se esconda
+        //debajo de la imagen pagina ENFOQUE
+        .imagenTextoEnfoque{
+            margin-bottom: 16rem;
+        }
     }
 
     //ajusto margen inferior para que no se esconda

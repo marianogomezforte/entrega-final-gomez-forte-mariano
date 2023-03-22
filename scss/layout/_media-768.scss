@@ -73,11 +73,11 @@
     //ajusto animacion pagina ENFOQUE
     @keyframes imagenConTexto3 {
         0% {
-            transform: translateY(220px);
+            transform: translateY(200px);
             opacity: 0;
         }
         100% {
-            transform: translateY(210px);
+            transform: translateY(190px);
             opacity: 1;
         }
     }
@@ -106,6 +106,18 @@
 
         .nCard1{
             margin: 1.5rem;
+        }
+
+        .imagenTextoEnfoque{
+            h2{
+                font-size: 3.9rem;
+            }
+        }
+
+        //ajusto margen inferior para que no se esconda
+        //debajo de la imagen pagina ENFOQUE
+        .imagenTextoEnfoque{
+            margin-bottom: 31rem;
         }
     }
 }

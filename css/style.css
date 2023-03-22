@@ -660,6 +660,12 @@ como en las clases*/
       opacity: 1; } }
   .gridEnfoque .imagenTextoEnfoque h2 {
     font-size: 2.5rem; }
+  .gridEnfoque .titulosEnfoque h3 {
+    font-size: 1.6rem; }
+  .gridEnfoque .titulosEnfoque p {
+    font-size: 1rem; }
+  .gridEnfoque .imagenTextoEnfoque {
+    margin-bottom: 16rem; }
   .gridEnfoque .imagenTextoEnfoque {
     margin-bottom: 16rem; } }
 
@@ -714,10 +720,10 @@ como en las clases*/
       margin: 0 6rem; }
   @keyframes imagenConTexto3 {
     0% {
-      transform: translateY(220px);
+      transform: translateY(200px);
       opacity: 0; }
     100% {
-      transform: translateY(210px);
+      transform: translateY(190px);
       opacity: 1; } }
   .gridEnfoque {
     grid-template-columns: 2fr;
@@ -728,7 +734,11 @@ como en las clases*/
     .gridEnfoque .titulosEnfoque p {
       font-size: 1.3rem; }
     .gridEnfoque .nCard1, .gridEnfoque .nCard2, .gridEnfoque .nCard3, .gridEnfoque .nCard4, .gridEnfoque .nCard5, .gridEnfoque .nCard6, .gridEnfoque .nCard7, .gridEnfoque .nCard8 {
-      margin: 1.5rem; } }
+      margin: 1.5rem; }
+    .gridEnfoque .imagenTextoEnfoque h2 {
+      font-size: 3.9rem; }
+    .gridEnfoque .imagenTextoEnfoque {
+      margin-bottom: 31rem; } }
 
 /*BREAKPOINT 1024px / 1200px*/
 @media (min-width: 1024px) {
@@ -760,7 +770,32 @@ como en las clases*/
   .descConIcono2 {
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 42rem; } }
+    margin-top: 42rem; }
+  @keyframes imagenConTexto3 {
+    0% {
+      transform: translateY(260px);
+      opacity: 0; }
+    100% {
+      transform: translateY(250px);
+      opacity: 1; } }
+  .gridEnfoque {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "im1 im1 im1 im1" "tex tex tex tex" "ti1 ti1 ti1 ti1" "ca1 ca2 ca3 ca4" "ca5 ca6 ca7 ca8" "diag diag diag diag"; }
+    .gridEnfoque .titulosEnfoque h3 {
+      font-size: 2.3rem; }
+    .gridEnfoque .titulosEnfoque p {
+      font-size: 1.3rem; }
+    .gridEnfoque .nCard1, .gridEnfoque .nCard2, .gridEnfoque .nCard3, .gridEnfoque .nCard4, .gridEnfoque .nCard5, .gridEnfoque .nCard6, .gridEnfoque .nCard7, .gridEnfoque .nCard8 {
+      margin: 1rem;
+      padding: 1rem;
+      width: 85%; }
+    .gridEnfoque .imagenTextoEnfoque h2 {
+      font-size: 4.9rem; }
+    .gridEnfoque .imagenTextoEnfoque {
+      margin-bottom: 36rem; }
+    .gridEnfoque .diagrama img {
+      padding: 5rem 10rem; } }
 
 @media (min-width: 1200px) {
   .descConIcono {
@@ -772,4 +807,13 @@ como en las clases*/
     font-size: 3rem; }
   .imgEquipo h3 {
     margin: 0 3rem;
-    font-size: 2.3rem; } }
+    font-size: 2.3rem; }
+  .gridEnfoque .imagenTextoEnfoque {
+    margin-bottom: 49rem; }
+  @keyframes imagenConTexto3 {
+    0% {
+      transform: translateY(380px);
+      opacity: 0; }
+    100% {
+      transform: translateY(370px);
+      opacity: 1; } } }
