@@ -219,86 +219,6 @@ main {
       .gridServicios .lista3 .listaConTilde3 .ch1, .gridServicios .lista3 .listaConTilde3 .ch2, .gridServicios .lista3 .listaConTilde3 .ch3 {
         justify-self: center; }
 
-/*.gridServicios{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(3, auto);
-    padding: 30px;
-    grid-template-areas:
-    ". img1 . titulo1 . . lista1 lista1 lista1 ."
-    ". lista2 lista2 lista2 . . titulo2 . img2 ."
-    ". img3 . titulo3 . . lista3 lista3 lista3 .";
-
-    div{
-        h4{
-            font-family: 'Poppins', sans-serif;
-            font-size: 23px;
-            color:#d80000;
-        }
-    }
-    
-    img{
-        border-radius: 50%;
-    }
-}
-
-.img1{
-    grid-area: img1;
-}
-.img2{
-    grid-area: img2;
-}
-.img3{
-    grid-area: img3;
-}
-
-.titulo1{
-    grid-area: titulo1;
-    text-align: center;
-}
-.titulo2{
-    grid-area: titulo2;
-    text-align: center;
-}
-.titulo3{
-    grid-area: titulo3;
-    text-align: center;
-}
-
-.lista1{
-    grid-area: lista1;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-}
-.lista2{
-    grid-area: lista2;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-}
-.lista3{
-    grid-area: lista3;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-}
-
-.listaConTilde{
-    background-color: #d9d9d9;
-    border-radius: 19px;
-    padding: 30px;
-
-    li {
-        list-style: url("../assets/img/icons/icon_check50px.png");
-        font-family: 'Poppins', sans-serif;
-        font-size: 19px;
-        color:#323741;
-        margin-left: 9%;
-    }
-}*/
 .gridEnfoque {
   display: grid;
   grid-template-columns: 1fr;
@@ -390,119 +310,6 @@ main {
       height: auto;
       padding: 1rem; }
 
-/*.gridEnfoque{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 500px 200px repeat(3, 0.5fr);
-    justify-items: center;
-    grid-template-areas:
-    "im1 im1 im1 im1"
-    "ti1 ti1 ti1 ti1"
-    "ca1 ca2 ca3 ca4"
-    "ca5 ca6 ca7 ca8"
-    "diag diag diag diag"
-    ;
-
-    div{
-        h4{
-            font-family: 'Poppins', sans-serif;
-            font-size: 23px;
-            color:#d80000;
-            background-color: #d9d9d9;
-            border-radius: 19px;
-            padding: 0.5rem;
-            margin: 20px 0px;
-            text-align: center;
-            width: 100%;
-        }
-        
-        p{
-            font-family: 'Poppins', sans-serif;
-            font-size: 19px;
-            color:#323741;
-            text-align: center;
-        }
-    }
-}
-
-.imgEnfoque{
-    grid-area: im1;
-    background-image: url("../assets/img/enfoque-nuevo-redim.jpg");
-    width: 100%;
-    height: 500px;
-    background-size:cover;
-    h2{
-        font-family: 'Poppins', sans-serif;
-        font-size: 45px;
-        text-align: center;
-        color: #ffffff;
-        text-shadow: 3px 3px 4px #323741;
-        padding-top: 27%;
-    }
-}
-.titulosEnfoque{
-    grid-area: ti1;
-    align-self: center;
-    h3{
-        font-family: 'Poppins', sans-serif;
-        font-size: 36px;
-        text-align: center;
-        color: #d80000;
-        text-shadow: 3px 3px 4px #323741;
-    }
-    
-    p{
-        font-family: 'Poppins', sans-serif;
-        font-size: 23px;
-        color:#323741;
-        text-align: center;
-    }
-}
-.nCard1{
-    grid-area: ca1;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    background-color: $background-color-card1;
-    border-radius: 0.4rem;
-    box-shadow: 2px 5px 5px rgb(128, 128, 128);
-}
-.nCard2{
-    @extend .nCard1;
-    grid-area: ca2;
-}
-.nCard3{
-    @extend .nCard1;
-    grid-area: ca3;
-}
-.nCard4{
-    @extend .nCard1;
-    grid-area: ca4;
-}
-.nCard5{
-    @extend .nCard1;
-    grid-area: ca5;
-}
-.nCard6{
-    @extend .nCard1;
-    grid-area: ca6;
-}
-.nCard7{
-    @extend .nCard1;
-    grid-area: ca7;
-}
-.nCard8{
-    @extend .nCard1;
-    grid-area: ca8;
-}
-.diagrama{
-    grid-area: diag;
-    img{
-        padding: 30px;
-    }
-}*/
 /*PAGINA EQUIPO*/
 .imgFondo2 img {
   width: 100%;
@@ -726,8 +533,8 @@ como en las clases*/
       transform: translateY(190px);
       opacity: 1; } }
   .gridEnfoque {
-    grid-template-columns: 2fr;
-    grid-template-columns: repeat(8, auto);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, auto);
     grid-template-areas: "im1 im1" "tex tex" "ti1 ti1" "ca1 ca2" "ca3 ca4" "ca5 ca6" "ca7 ca8" "diag diag"; }
     .gridEnfoque .titulosEnfoque h3 {
       font-size: 2.3rem; }
@@ -738,7 +545,9 @@ como en las clases*/
     .gridEnfoque .imagenTextoEnfoque h2 {
       font-size: 3.9rem; }
     .gridEnfoque .imagenTextoEnfoque {
-      margin-bottom: 31rem; } }
+      margin-bottom: 31rem; }
+    .gridEnfoque .diagrama {
+      padding: 3rem 6rem; } }
 
 /*BREAKPOINT 1024px / 1200px*/
 @media (min-width: 1024px) {
@@ -795,7 +604,13 @@ como en las clases*/
     .gridEnfoque .imagenTextoEnfoque {
       margin-bottom: 36rem; }
     .gridEnfoque .diagrama img {
-      padding: 5rem 10rem; } }
+      padding: 5rem 10rem; }
+  .gridServicios .lista1 .listaConTilde1, .gridServicios .lista2 .listaConTilde1, .gridServicios .lista3 .listaConTilde1, .gridServicios .lista2 .listaConTilde2, .gridServicios .lista3 .listaConTilde3 {
+    margin-right: 6rem; }
+  .gridServicios .lista2 .listaConTilde2 {
+    margin-left: 6rem; }
+  .gridServicios .listaConTilde3 .listaConTilde3.listaConTilde3 {
+    margin-right: 6rem; } }
 
 @media (min-width: 1200px) {
   .descConIcono {

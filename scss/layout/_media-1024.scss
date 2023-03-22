@@ -111,6 +111,25 @@
             }
         }
     }
+
+    //ajusto listas con tilde en pagina servicios
+    .gridServicios{
+        .lista1{
+            .listaConTilde1{
+                margin-right: 6rem;
+            }
+        }
+        .lista2{
+            .listaConTilde2{
+                margin-left: 6rem;
+            }
+        }
+        .listaConTilde3{
+            .listaConTilde3.listaConTilde3{
+                margin-right: 6rem;
+            }
+        }
+    }
 }
 
 @media (min-width:1200px){

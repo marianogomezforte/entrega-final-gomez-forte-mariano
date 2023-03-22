@@ -83,8 +83,8 @@
     }
     //ajusto posicion de elementos en pagina enfoque
     .gridEnfoque{
-        grid-template-columns: 2fr;
-        grid-template-columns: repeat(8,auto);
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(8,auto);
         grid-template-areas: 
         "im1 im1"
         "tex tex"
@@ -118,6 +118,10 @@
         //debajo de la imagen pagina ENFOQUE
         .imagenTextoEnfoque{
             margin-bottom: 31rem;
+        }
+
+        .diagrama{
+            padding: 3rem 6rem;
         }
     }
 }
